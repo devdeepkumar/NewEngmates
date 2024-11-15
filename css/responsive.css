@@ -106,12 +106,6 @@
 
 /* for medium device  */
 @media (max-width: 768px) {
-
-      .container {
-        max-width: 90%;
-        margin-inline: auto;
-    }
-}
   .hero-container h1 {
     font-size: 40px;
     line-height: 51px;
@@ -217,7 +211,7 @@
   }
 
   .hero-container .hero_right .education_2 {
-    left: 0;
+    left: 88px;
 }
 
 .footer-links{
@@ -233,12 +227,6 @@
     }
 }
 
-.registerarea__form form .half_input{
-  display: block;
-}
-.courses_navbar{
-  display: none;
-}
 
 
 
