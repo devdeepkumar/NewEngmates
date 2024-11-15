@@ -1,0 +1,271 @@
+/* for large device  */
+
+@media (max-width: 992px) {
+  header {
+    padding-inline: 3%;
+  }
+  nav {
+    display: none;
+  }
+
+  .event_main_comtainer svg {
+    display: none;
+  }
+  .container {
+    max-width: 80%;
+    margin-inline: auto;
+  }
+
+  .hero-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .education_image_container {
+    text-align: center;
+  }
+
+  .hero-container .hero_right .education_1 {
+    position: static;
+  }
+
+  .hero-container .hero_right .education_3 {
+    position: absolute;
+    right: 180px;
+    z-index: -9;
+  }
+
+  .hero-container .hero_left {
+    margin-right: 0;
+    /* padding-inline: 60px; */
+    padding-bottom: 60px;
+  }
+
+  .hero-container .hero_right .education_4 {
+    right: 115px;
+    z-index: -0909;
+  }
+
+  .training_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about_image_container {
+    text-align: center;
+  }
+
+  .popular_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .popular_third {
+    justify-content: left;
+  }
+
+  .popular_card_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid-col-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-col-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .course_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .registerarea__form {
+    position: static;
+    width: 100%;
+  }
+
+  .event_heading_box h1 {
+    max-width: 100%;
+  }
+
+  .brandarea__wraper .brandarea__img {
+    width: 25%;
+  }
+
+  .footer_heading .footer_input input {
+    width: 250px;
+  }
+
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* for medium device  */
+@media (max-width: 768px) {
+
+      .container {
+        max-width: 90%;
+        margin-inline: auto;
+    }
+}
+  .hero-container h1 {
+    font-size: 40px;
+    line-height: 51px;
+  }
+
+  .hero-container p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .hero-container .hero_left input {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .education_image_container {
+    width: fit-content;
+  }
+
+  .education_3 {
+    display: none;
+  }
+
+  .training_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about_image_container .about2,
+  .about_image_container .about1 {
+    width: 100%;
+  }
+
+  .days_btns_container {
+    display: none;
+  }
+
+  .about_section .right_about {
+    padding-top: 200px;
+  }
+
+  .heading_2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .right_about .about_list li {
+    font-size: 14px;
+  }
+
+  .grid-col-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-col-4 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .event_heading_box {
+    flex-wrap: wrap;
+  }
+
+  .event-card {
+    flex-direction: column;
+    /* text-align: center; */
+  }
+
+  .event-card-image {
+    margin-inline: auto;
+  }
+  .event-card-image img {
+    margin-inline: auto;
+  }
+
+  .event-details {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0;
+    align-items: flex-start;
+    margin-top: 10px;
+  }
+
+  .testimonial-card {
+    display: none;
+  }
+  .brand_heading {
+    padding: 0;
+  }
+
+  .brandarea__wraper .brandarea__img {
+    width: 50%;
+  }
+
+.footer_heading {
+    flex-wrap: wrap;
+}
+
+
+.footer_input{
+    width: 100;
+}
+
+.education_1{
+    width: 100%;
+  }
+
+  .hero-container .hero_right .education_2 {
+    left: 0;
+}
+
+.footer-links{
+    grid-template-columns: repeat(1,1fr);
+}
+
+.footer-column.about {
+    width: 100%;
+}
+
+.footer_heading .footer_input input {
+        width: 100%;
+    }
+}
+
+.registerarea__form form .half_input{
+  display: block;
+}
+.courses_navbar{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* for small Device  */
+@media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+    margin-inline: auto;
+  }
+}
