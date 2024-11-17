@@ -4,12 +4,12 @@
   header {
     padding-inline: 3%;
   }
-  nav {
-    display: none;
-  }
 
   .event_main_comtainer svg {
     display: none;
+  }
+  .event_main_comtainer .event-card {
+    background: var(--lightGrey7);
   }
   .container {
     max-width: 80%;
@@ -37,7 +37,7 @@
   .hero-container .hero_left {
     margin-right: 0;
     /* padding-inline: 60px; */
-    padding-bottom: 60px;
+    padding-block: 60px;
   }
 
   .hero-container .hero_right .education_4 {
@@ -102,6 +102,18 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
+  .nav_link_container {
+    display: none;
+  }
+
+  .mobile_nav_link .menue {
+    display: flex;
+  }
+
+  .event-card:nth-child(even) {
+    flex-direction: column-reverse;
+  }
 }
 
 /* for medium device  */
@@ -138,8 +150,13 @@
     width: 100%;
   }
 
-  .days_btns_container {
-    display: none;
+  .days_btns_container  ul{
+    display: flex;
+   flex-wrap: wrap;
+
+    li{
+      width: 48%;
+    }
   }
 
   .about_section .right_about {
@@ -186,9 +203,6 @@
     margin-top: 10px;
   }
 
-  .testimonial-card {
-    display: none;
-  }
   .brand_heading {
     padding: 0;
   }
@@ -197,56 +211,91 @@
     width: 50%;
   }
 
-.footer_heading {
+  .footer_heading {
     flex-wrap: wrap;
-}
+  }
 
+  .footer_input {
+    width: 100%;
+  }
 
-.footer_input{
-    width: 100;
-}
-
-.education_1{
+  .education_1 {
     width: 100%;
   }
 
   .hero-container .hero_right .education_2 {
-    left: 88px;
-}
+    left: 0;
+    top: 230px;
+  }
 
-.footer-links{
-    grid-template-columns: repeat(1,1fr);
-}
+  .educationarea__small__img {
+    position: absolute;
+    right: 102px;
+    bottom: -59px;
+    z-index: 999;
+  }
 
-.footer-column.about {
+  .footer-links {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-column.about {
     width: 100%;
-}
+  }
 
-.footer_heading .footer_input input {
-        width: 100%;
+  .footer_heading .footer_input input {
+    width: 100%;
+  }
+
+  .educationarea__small__img__2 {
+    right: -24px;
+    top: -409px;
+  }
+
+  .hero__shape__1 {
+    right: 0;
+  }
+
+  .hero__shape__2 {
+    right: 0;
+  }
+
+  .registration_section .container .left_registration h2 {
+    font-size: 30px;
+  }
+
+  .event-card {
+    background: var(--whiteColor);
+  }
+
+  .testimonial-card {
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .left-arrow {
+    left: 0;
+  }
+
+  .right-arrow {
+    right: 0;
+  }
+
+  .registerarea__form {
+    padding: 30px 25px 25px 25px;
+  }
+
+  .video-btn .video__pop__btn a {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  .video_btn p {
+        font-weight: 400 !important;
+        font-size: 14px !important ;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 }
 
@@ -255,5 +304,37 @@
   .container {
     max-width: 90%;
     margin-inline: auto;
+  }
+
+  .about_section .right_about {
+        padding-top: 125px;
+    }
+
+  .courses_navbar {
+    display: none;
+  }
+  .event-title {
+    margin-right: 0;
+  }
+
+  .training_container {
+    margin-top: 0%;
+  }
+
+  .hero-container .hero_right .education_4 {
+        right: 0;
+        z-index: -0909;
+  }
+
+  .popular_second p{
+    margin-bottom: 0;
+  }
+
+  .popular_third .common_btn{
+    margin-block: 0;
+  }
+
+  .sub_heading{
+    flex-direction: column;
   }
 }
