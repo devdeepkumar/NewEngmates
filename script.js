@@ -1,3 +1,10 @@
+window.addEventListener("load", () => {
+  const preloader = document.querySelector("#back__preloader");
+  preloader.style.display = "none";
+});
+
+
+
 // Select the required elements
 const menue = document.querySelector(".menue");
 const mobileNav = document.querySelector(".mobile_nav");
@@ -55,10 +62,6 @@ closeBtn.addEventListener("click", () => {
 
 // // Observe the hero section
 // observer.observe(heroSection);
-
-
-
-
 
 // Testimonial JavaScript Started here
 
