@@ -1327,6 +1327,7 @@ header .user-nav .common_btn {
 .testimonial_section {
   background: var(--lightGrey7);
   padding-bottom: 110px;
+    position: relative;
 }
 
 .testimonial_heder {
@@ -1348,16 +1349,33 @@ header .user-nav .common_btn {
   cursor: pointer;
   margin: 0 10px;
 }
+
+
+.testimonial-container-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-container {
+  display: flex;
+  /* justify-content: center; */
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+
+
 .testimonial-card {
   background: var(--whiteColor);
   color: #fff;
-  width: 50%;
-  padding: 20px;
+  min-width: 48%;
+  padding: 50px;
   border-radius: 8px;
   margin: 0 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+ 
 }
+
 
 .testimonial-header {
   display: flex;
@@ -1400,30 +1418,6 @@ header .user-nav .common_btn {
 .stars img {
   width: 15px;
   margin-right: 5px;
-}
-
-.testimonial_section {
-  position: relative;
-}
-
-.testimonial-container-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-.testimonial-container {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-.testimonial-card {
-  flex: 1 1 50%;
-  min-width: 48%;
-
-  padding: 1.5rem;
-  border-radius: 8px;
-  text-align: left;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .arrow {
@@ -1625,6 +1619,8 @@ header .user-nav .common_btn {
 }
 
 
+
+/* footer fixed button  */
 #scrollUp {
     width: 50px;
     height: 50px;

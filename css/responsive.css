@@ -285,16 +285,18 @@
     padding: 30px 25px 25px 25px;
   }
 
-  .video-btn .video__pop__btn a {
+  .video__pop__btn a {
     width: 60px;
     height: 60px;
     line-height: 60px;
+    margin-right: 0;
   }
+ 
 
   .video_btn p {
-        font-weight: 400 !important;
-        font-size: 14px !important ;
-    }
+        font-weight: 700 !important;
+        font-size: 13px !important;
+  }
  
 
 }
@@ -311,7 +313,12 @@
     }
 
   .courses_navbar {
-    display: none;
+    padding: 10px;
+    margin: 20px 0;
+  }
+
+  .grid__filter button {
+    padding: 0;
   }
   .event-title {
     margin-right: 0;
