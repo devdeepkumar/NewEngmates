@@ -329,10 +329,12 @@
  }
   .banner_content_area{
     grid-template-columns: repeat(1,1fr);
+
   }
 
   .banner_content_area{
     gap: 20px;
+    padding: 15px;
   }
 }
 
