@@ -4,6 +4,13 @@
   header {
     padding-inline: 3%;
   }
+  header .nav_btn{
+    display: none;
+  }
+
+  .mobile_nav_link{
+    display: block;
+  }
 
   .event_main_comtainer svg {
     display: none;

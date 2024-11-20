@@ -47,7 +47,7 @@
 }
 
 body {
-  font-family: "Hind", sans-serif;
+  font-family:"Inter", sans-serif;
   /* background-color: var(--bodyBg); */
   background: rgb(21, 15, 50);
   background: linear-gradient(
@@ -120,6 +120,7 @@ li {
   margin-bottom: 0;
   position: relative;
   z-index: 1;
+  font-family: "Hind", sans-serif;
 }
 
 .heading_2 span {
@@ -269,13 +270,16 @@ header .user-nav .common_btn {
   border-radius: 50%;
 }
 
-.nav_link_container {
+/* .nav_link_container {
   display: flex;
   align-items: center;
   flex-grow: 1;
   justify-content: space-between;
   padding-left: 100px;
-}
+} */
+ .mobile_nav_link{
+  display: none;
+ }
 .mobile_nav_link .menue {
   display: flex;
   gap: 15px;
@@ -411,6 +415,7 @@ header .user-nav .common_btn {
   line-height: 72px;
   font-weight: 700;
   margin: 0;
+  font-family: "Hind", sans-serif;
 }
 
 .hero-container p {
@@ -586,19 +591,17 @@ header .user-nav .common_btn {
 
 .training_container {
   margin-inline: auto;
-  margin-top: 225px;
-  margin-bottom: 30px;
+  margin-top: 155px;
+  margin-bottom: 50px
 }
 
 .training_container .taining_card {
   display: flex;
   align-items: center;
-}
-
-.training_container .taining_card {
+  padding: 15px 0px 15px 20px;
   border: 1px solid rgba(126, 133, 139, 0.18);
   border-radius: 5px;
-  padding: 26px 30px 26px 26px;
+
 }
 
 .taining_card.first:hover {
@@ -669,6 +672,16 @@ header .user-nav .common_btn {
 /* //Popular Section   */
 .popular_card_container {
   margin-top: 65px;
+}
+.popular_grid{
+  align-items: end;
+}
+.popular_grid .common_btn{
+  margin-bottom: 0;
+}
+
+.popular_grid .popular_second p{
+  margin-bottom: 0;
 }
 
 .popular_card {
@@ -1020,7 +1033,7 @@ header .user-nav .common_btn {
   padding: 40px 35px 35px 35px;
   border-radius: 5px;
   position: absolute;
-  top: 0;
+  top: -70px;
   right: 20px;
   z-index: 1;
 }
@@ -1338,7 +1351,7 @@ header .user-nav .common_btn {
   color: var(--brown-color);
   font-size: 40px;
   margin-bottom: 30px;
-  font-family: Nunito;
+  font-family: "Hind", sans-serif;;
   font-weight: 700;
 }
 .faq_desktop {
@@ -1543,7 +1556,7 @@ header .user-nav .common_btn {
 }
 .testimonial-text {
   margin: 15px 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 32px;
 }
 .stars {
@@ -1614,16 +1627,15 @@ header .user-nav .common_btn {
 
 .brandarea__img img {
   width: 130px;
-  height: 50px;
 }
 
 /* Banner Section Srart Here */
 
 .banner_content_area {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 100px;
-  padding: 50px;
+  grid-template-columns: 320px 310px 410px;
+  gap: 40px;
+ justify-content: space-evenly;
   background: #f2efea;
 }
 
@@ -2139,7 +2151,7 @@ header .user-nav .common_btn {
    position: absolute;
    list-style-type: none;
    margin: 0;
-   width: 200px;
+   width: 300px;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
    z-index: 99999;
    background: #0C0E2B;
@@ -2166,4 +2178,12 @@ header .dropdown-menu li {
     box-shadow: 0 0 50px 10px rgba(15, 157, 193, 0.1);
     border-bottom-right-radius: 4px;
     border-bottom-left-radius: 4px;
+}
+
+
+.courses_card {
+    display: none; /* Hide all cards by default */
+}
+.courses_card.active {
+    display: block; /* Show filtered cards */
 }

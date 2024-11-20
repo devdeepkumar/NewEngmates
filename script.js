@@ -241,3 +241,35 @@ function closeModal(modalId) {
     document.body.style.overflow = "unset";
   }, 300);
 }
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".gridfilter_nav button");
+  const cards = document.querySelectorAll(".courses_card");
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Remove active class from buttons
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      button.classList.add("active");
+
+      // Get filter value
+      const filter = button.getAttribute("data-filter");
+
+      // Filter cards
+      cards.forEach((card) => {
+        // Check if the card has the selected filter class
+        if (filter === "*" || card.classList.contains(filter.substring(1))) {
+          card.classList.add("active");
+        } else {
+          card.classList.remove("active");
+        }
+      });
+    });
+  });
+
+  // Trigger "All" filter on load
+  document.querySelector(".gridfilter_nav button.active").click();
+});
