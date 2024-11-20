@@ -297,8 +297,36 @@
         font-weight: 700 !important;
         font-size: 13px !important;
   }
- 
 
+  .days_btns_container ul li{
+    padding: 5px 0;
+  }
+  .grid__filter button::before{
+    transition: .6s ease-in;
+  }
+  .grid__filter button.active::before{
+    bottom: -2px;
+  }
+  .grid__filter button::before{
+    bottom: -2px;
+  }
+.registerarea__form form .register__input{
+  line-height: normal;
+}
+
+  .registration_section{
+    margin-bottom: 0;
+  }
+ .faq_container{
+  padding: 0;
+ }
+  .banner_content_area{
+    grid-template-columns: repeat(1,1fr);
+  }
+
+  .banner_content_area{
+    gap: 20px;
+  }
 }
 
 /* for small Device  */
@@ -344,4 +372,12 @@
   .sub_heading{
     flex-direction: column;
   }
+  .testimonial-card{
+    padding: 20px;
+  }
+  
+  .modal-content{
+    width: 80%;
+  }
+
 }
