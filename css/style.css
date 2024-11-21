@@ -45,17 +45,20 @@
   --transition:.3s;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap'); 
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: 'Outfit', sans-serif;
 }
 
 body {
-  font-family:"Inter", sans-serif;
+  /* font-family:"Inter", sans-serif; */
   background-color: var(--bodyBg);
   /* background: rgb(21, 15, 50);
   background: linear-gradient(
@@ -80,7 +83,7 @@ p {
 a {
   text-decoration: none;
   transition: var(--transition);
-  color: var(--whiteColor);
+  /* color: var(--whiteColor); */
 }
 
 img {
@@ -92,7 +95,7 @@ li {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1300px;
   margin-inline: auto;
   /* min-height: 100vh; */
   padding-top: 30px;
@@ -128,7 +131,7 @@ li {
   margin-bottom: 0;
   position: relative;
   z-index: 1;
-  font-family: "Hind", sans-serif;
+  /* font-family: "Hind", sans-serif; */
 }
 
 .heading_2 span {
@@ -231,13 +234,15 @@ header .nav-link li {
   padding: 40px 20px;
   font-size: 16px;
   cursor: pointer;
-
   img {
     width: 20px;
   }
 }
+header .nav-link li a{
+  color: var(--blackColor);
+}
 
-header .nav-link li:hover {
+header .nav-link li:hover a{
   color: #402bc5;
 }
 header .user-nav {
@@ -285,6 +290,10 @@ header .user-nav .common_btn {
   justify-content: space-between;
   padding-left: 100px;
 } */
+
+.mobile_nav_link .mobile_nav span a{
+  color: var(--blackColor);
+}
  .mobile_nav_link{
   display: none;
  }
@@ -363,11 +372,11 @@ header .user-nav .common_btn {
 
 .close_btn {
   position: absolute;
-  left: -30px;
+  left: -20px;
   top: 0;
 }
 .close_btn img {
-  width: 15px;
+  width: 20px;
 }
 
 .nav_item {
@@ -394,7 +403,7 @@ header .user-nav .common_btn {
   display: none;
 }
 
-.mobile_nav span:hover {
+.mobile_nav span:hover a{
   color: var(--secondaryColor);
   transition: 0.2s ease ease-in-out;
 }
@@ -423,7 +432,7 @@ header .user-nav .common_btn {
   line-height: 72px;
   font-weight: 700;
   margin: 0;
-  font-family: "Hind", sans-serif;
+  /* font-family: "Hind", sans-serif; */
 }
 
 .hero-container p {
@@ -820,7 +829,7 @@ header .user-nav .common_btn {
 .grid__filter button {
   border: none;
   background: none;
-  margin: 0 15px;
+  margin: 0 5px;
   padding: 0 15px;
   position: relative;
   font-weight: 700;
@@ -851,7 +860,7 @@ header .user-nav .common_btn {
   height: 20px;
   background: var(--contentColor);
   bottom: -3px;
-  right: -15px;
+  right: -7px;
 }
 .grid__filter button:last-child::after {
   display: none;
@@ -1077,7 +1086,7 @@ header .user-nav .common_btn {
 }
 
 .registerarea__form .registerarea__form__heading h4 {
-  font-family: var(--bodyFont);
+  /* font-family: var(--bodyFont); */
   font-size: 20px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -1391,7 +1400,7 @@ header .user-nav .common_btn {
   color: var(--brown-color);
   font-size: 40px;
   margin-bottom: 30px;
-  font-family: "Hind", sans-serif;;
+  /* font-family: "Hind", sans-serif; */
   font-weight: 700;
 }
 .faq_desktop {
@@ -2018,7 +2027,6 @@ header .user-nav .common_btn {
 #footer p {
     color: #919191;
     font-size: 15px;
-    font-family: Nunito;
     margin-right: 2px;
 }
 .copyright1 {
@@ -2102,7 +2110,6 @@ header .user-nav .common_btn {
 #footer p {
     color: #919191;
     font-size: 15px;
-    font-family: Nunito;
     margin-right: 2px;
 }
 .modal-body p {
@@ -2126,7 +2133,6 @@ header .user-nav .common_btn {
 }
 
 .button-gradient {
-    font-family: inherit;
     display: inline-block;
     font-weight: 400;
     line-height: 1.5;

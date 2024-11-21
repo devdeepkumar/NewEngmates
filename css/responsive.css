@@ -121,6 +121,9 @@
   .event-card:nth-child(even) {
     flex-direction: column-reverse;
   }
+  .Fixed_WhatsApp_Icon{
+    display: none;
+  }
 }
 
 /* for medium device  */
@@ -176,7 +179,7 @@
   }
 
   .right_about .about_list li {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .grid-col-3 {
@@ -238,8 +241,8 @@
   .educationarea__small__img {
     position: absolute;
     right: 102px;
-    bottom: -59px;
-    z-index: 999;
+    bottom: -115px;
+    z-index: 99;
   }
 
   .footer-links {
@@ -255,8 +258,9 @@
   }
 
   .educationarea__small__img__2 {
-    right: -15px;
-    top: -409px;
+    right:-20px;
+    top: -360px;
+    width:285px
   }
 
   .hero__shape__1 {
@@ -365,11 +369,11 @@
   }
 
   .training_container {
-    margin-top: 0%;
+    margin-top: 15%;
   }
 
   .hero-container .hero_right .education_4 {
-        right: 0;
+        right: 24px;
         z-index: -0909;
   }
 
@@ -391,5 +395,11 @@
   .modal-content{
     width: 100%;
   }
+  .accordion-question {
+    font-size: 17px;
+  }
 
+  .right_about p br{
+    display: none;
+  }
 }

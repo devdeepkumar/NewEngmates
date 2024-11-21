@@ -27,14 +27,14 @@
          <div class="nav_link_container">
             <nav>
                   <ul class="nav-link">
-                     <li>Home
+                     <li><a href="#hero">Home</a>
                         <!-- <img src="./images/down.svg" alt="down" loading="lazy"> -->
                      </li>
-                     <li>About
+                     <li><a href="#about">About</a>
                         <!-- <img src="./images/down.svg" alt="down" loading="lazy"> -->
                      </li>
                      <li class="dropdown">
-                        Courses<img src="./images/down.svg" alt="down" loading="lazy">
+                        <a href="#courses">Courses</a><img src="./images/down.svg" alt="down" loading="lazy">
                         <ul class="dropdown-menu">
                            <li>Basic English  Course</li>
                            <li>Advance  English Course</li>
@@ -42,6 +42,12 @@
                             <li>Personality Development Course</li>
                            <li>Professional English Course</li>                       
                         </ul>
+                     </li>
+                     <li><a href="#faq">FAQs</a>
+                        <!-- <img src="./images/down.svg" alt="down" loading="lazy"> -->
+                     </li>
+                     <li><a href="#review">Reviews</a>
+                        <!-- <img src="./images/down.svg" alt="down" loading="lazy"> -->
                      </li>
                   </ul>
                </nav>
@@ -72,21 +78,25 @@
                </div> -->
                <nav>
                   <div class="nav_item">
-                     <span>Home</span>
+                     <span><a href="#hero">Home</a></span>
                      <img loading="lazy" src="./images/plus.svg" alt="">
                   </div>
                   <div class="nav_item">
-                     <span>About</span>
+                     <span><a href="#about">About</a></span>
                      <img loading="lazy" src="./images/plus.svg" alt="">
                   </div>
                   <div class="nav_item">
-                     <span>Courses</span>
+                     <span><a href="#courses">Courses</a></span>
                      <img loading="lazy" src="./images/plus.svg" alt="">
                   </div>
-                  <!-- <div class="nav_item">
-                     <span>Courses</span>
+                  <div class="nav_item">
+                     <span><a href="#faq">FAQs</a></span>
                      <img loading="lazy" src="./images/plus.svg" alt="">
-                  </div> -->
+                  </div>
+                   <div class="nav_item">
+                     <span><a href="#review">Reviews</a></span>
+                     <img loading="lazy" src="./images/plus.svg" alt="">
+                  </div>
                   <!-- <div class="nav_item">
                      <span>Dashboard</span>
                      <img loading="lazy" src="./images/plus.svg" alt="">
@@ -169,8 +179,7 @@
             </div>
             <div class="content_side">
                <h3>Individual Attention</h3>
-               <p>Training according to your grasping level
-</p>
+               <p>Training according to your grasping level</p>
             </div>
          </div>
          <div class="taining_card second">
@@ -193,7 +202,7 @@
          </div>
       </section>
       <!-- About Section  -->
-      <section class="container about_section">
+      <section id="about" class="container about_section">
          <div class="about_container grid-col-2">
             <div class="left_about">
                <div class="about_image_container">
@@ -477,7 +486,7 @@
             </div>
          </div>
       </section>
-      <section class="grid_section">
+      <section id="courses" class="grid_section">
          <div class="container">
          <div class="grid_section_heading flex_center">
             <div class="small_text">
@@ -493,9 +502,10 @@
                <button class="active" data-filter="*">All</button>
                <button data-filter=".filter1" class="">Basic English</button>
                <button data-filter=".filter2" class="">Advance English</button>
-               <button data-filter=".filter3" class="">  Public Speaking </button>
-               <button data-filter=".filter4" class=""> Personality Development</button>
-               <button data-filter=".filter5" class=""> English for Professionals</button>
+               <button data-filter=".filter3" class="">Public Speaking </button>
+               <button data-filter=".filter4" class="">Personality Development</button>
+               <button data-filter=".filter5" class="">English for Professionals</button>
+                <button data-filter=".filter6" class="">Interview Prepration</button>
             </div>
          </div>
          <div class="courses_card_container">
@@ -536,7 +546,7 @@
                      </div>
                   </div>
                </div>
-               <div class="courses_card filter2 filter2">
+               <div class="courses_card filter2">
                   <div class="thunbnail ">
                      <img src="./images/grid_1.png" alt="course-1">
                      <div class="gridarea__small__button">
@@ -572,7 +582,7 @@
                      </div>
                   </div>
                </div>
-               <div class="courses_card filter3 filter4">
+               <div class="courses_card filter3">
                   <div class="thunbnail ">
                      <img src="./images/grid_1.png" alt="course-1">
                      <div class="gridarea__small__button">
@@ -609,7 +619,7 @@
                      </div>
                   </div>
                </div>
-               <div class="courses_card filter4 filter1">
+               <div class="courses_card filter4">
                   <div class="thunbnail ">
                      <img src="./images/grid_1.png" alt="course-1">
                      <div class="gridarea__small__button">
@@ -647,7 +657,7 @@
                      </div>
                   </div>
                </div>
-                <div class="courses_card filter5 filter4">
+                <div class="courses_card filter5">
                   <div class="thunbnail ">
                      <img src="./images/grid_1.png" alt="course-1">
                      <div class="gridarea__small__button">
@@ -683,7 +693,7 @@
                      </div>
                   </div>
                </div>
-               <div class="courses_card filter5 filter4 filter3">
+               <div class="courses_card filter6">
                   <div class="thunbnail ">
                      <img src="./images/grid_1.png" alt="course-1">
                      <div class="gridarea__small__button">
@@ -1035,14 +1045,14 @@
         </div>
       
    
-  </section>
+      </section>
       
       
       
-      <section class="testimonial_section">
+      <section id="review" class="testimonial_section">
          <div class="container">
             <div class="testimonial_heder">
-               <div class="small_text">Testimonials</div>
+               <div class="small_text">Reviews</div>
                <h2 class="heading_2">Students’ <span>Success</span> Stories</span></h2>
             </div>
             <div class="arrow left-arrow">&larr;</div>
@@ -1255,7 +1265,7 @@
                         </div>
                      </div>
                      <div class="testimonial-text">
-                       started my journey with Engmates few months back. I am very happy and confident about the skills I have acquired so far. I am very thankful to the faculty for all the support and encouragement.                  
+                       I started my journey with Engmates few months back. I am very happy and confident about the skills I have acquired so far. I am very thankful to the faculty for all the support and encouragement.                  
                       <a href="javascript:void(0)" class="read-more">Read More</a>
                      </div>
                   </div>
@@ -1560,7 +1570,7 @@
                   <a href="#"><img loading="lazy" src="./images/indigo-logo.png" alt="brand"></a>
                </div>
                <div class="brandarea__img">
-                  <a href="#"><img loading="lazy" src="./images/pnb-metlife.jpeg" alt="brand"></a>
+                  <a href="#"><img loading="lazy" src="./images/pnb-metlife.png" alt="brand"></a>
                </div>
                <div class="brandarea__img">
                   <a href="#"><img loading="lazy" src="./images/google-logo.webp" alt="brand"></a>
@@ -1575,7 +1585,7 @@
                   <a href="#"><img loading="lazy" src="./images/infosys-logo.png" alt="brand"></a>
                </div>
                 <div class="brandarea__img">
-                  <a href="#"><img loading="lazy" src="./images/aiims-logo.jpg" alt="brand"></a>
+                  <a href="#"><img loading="lazy" src="./images/aiims-logo.png" alt="brand"></a>
                </div>
                 <div class="brandarea__img">
                   <a href="#"><img loading="lazy" src="./images/dakin-logo.gif" alt="brand"></a>
