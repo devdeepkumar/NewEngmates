@@ -2202,18 +2202,19 @@ header .user-nav .common_btn {
    width: 300px;
    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
    z-index: 99999;
-   background: #0C0E2B;
+   background: var(--whiteColor);
+
 }
 
 header .dropdown-menu li {
-   color: #fff;
+   color: var(--blackColor);
    cursor: pointer;
    padding: 10px;
    /* transition: background-color 0.3s ease; */
 }
 
 .dropdown-menu li:hover {
-   background-color: #060f29;
+color: var(--primaryColor);
 }
 
 .nav-link .dropdown:hover .dropdown-menu {
