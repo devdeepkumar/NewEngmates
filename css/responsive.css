@@ -274,6 +274,9 @@
   .event-card {
     background: var(--whiteColor);
   }
+  .testimonial_section{
+    padding-bottom: 0;
+  }
 
   .testimonial-card {
     flex: 1 1 100%;
@@ -386,7 +389,7 @@
   }
   
   .modal-content{
-    width: 80%;
+    width: 100%;
   }
 
 }

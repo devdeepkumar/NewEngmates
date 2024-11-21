@@ -1,20 +1,27 @@
 :root {
-  --bodyColor: #fff;
-  --bodyBg: #0c0e2b;
+
+  /* Dark Theme  */
+  /* --bodyColor: #fff; */
+  /* --bodyBg: #0c0e2b; */
+
+
+  --bodyBg:#FAFAFB;
+  --bodyColor: #191B1E;
   --bodyBg1: #0c0e2b;
   --headingColor: #fff;
-  --blackColor: #fff;
+  --blackColor: #000;
   --blackColor2: #fff;
-  --whiteColor: #0c0e2b;
+  --whiteColor: #FAFAFB;
   --darkdeep2: #fff;
   --darkblack: #fff;
   --lightGrey: #0c0e2b;
-  --lightGrey7: #170f2f;
+  /* --lightGrey7: #170f2f; */
+  --lightGrey7: #F3F4FD;
   --lightGrey10: #170f2f;
   --lightGrey11: #170f2f;
-  --contentColor: #fff;
+  --contentColor: #5F6C76;
   --darkdeep5: #fff;
-  --borderColor: #312a57;
+  --borderColor: #eeeeee;
   --whitegrey: #fff;
   --whitegrey1: #312a57;
   --whitegrey2: #312a57;
@@ -35,6 +42,7 @@
   --borderRadius3: 10px;
   --borderRadius: 4px;
   --greenColor: #44cea9;
+  --transition:.3s;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800;900&display=swap");
@@ -48,14 +56,14 @@
 
 body {
   font-family:"Inter", sans-serif;
-  /* background-color: var(--bodyBg); */
-  background: rgb(21, 15, 50);
+  background-color: var(--bodyBg);
+  /* background: rgb(21, 15, 50);
   background: linear-gradient(
     90deg,
     rgba(21, 15, 50, 1) 0%,
     rgba(12, 14, 43, 1) 50%,
     rgba(26, 16, 54, 1) 100%
-  );
+  ); */
   color: var(--bodyColor);
   font-size: 16px;
   font-weight: 400;
@@ -72,7 +80,7 @@ p {
 a {
   text-decoration: none;
   transition: var(--transition);
-  color: var(--bodyColor);
+  color: var(--whiteColor);
 }
 
 img {
@@ -105,7 +113,7 @@ li {
 .grid-col-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 30px;
 }
 
 .grid-col-4 {
@@ -191,7 +199,7 @@ li {
 header {
   position: fixed;
   width: 100%;
-  color: white;
+  color: var(--blackColor);
   background: var(--whiteColor);
   display: flex;
   justify-content: space-between;
@@ -296,7 +304,7 @@ header .user-nav .common_btn {
 .mobile_nav {
   box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.1);
   padding: 40px 30px 50px;
-  background: #170f2f;
+  background: #F6F6F6;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -445,13 +453,15 @@ header .user-nav .common_btn {
   outline: none;
   border: none;
   border-radius: 4px;
-  color: var(--bodyColor);
+  color: var(--whiteColor);
   font-size: 16px;
   cursor: pointer;
   border: 1px solid var(--primaryColor);
+  
 }
 .hero_btn:hover {
   background: transparent;
+  color: var(--primaryColor);
 }
 
 .common_btn {
@@ -462,13 +472,14 @@ header .user-nav .common_btn {
   font-size: 18px;
   margin-block: 30px;
   background-color: var(--primaryColor);
-  color: var(--bodyColor);
+  color: var(--whiteColor);
   cursor: pointer;
   border: 1px solid var(--primaryColor);
 }
 
 .common_btn:hover {
   background-color: transparent;
+ color: var(--primaryColor);
 }
 
 .common_btn img {
@@ -530,7 +541,7 @@ header .user-nav .common_btn {
 }
 
 .educationarea__small__para span {
-  color: #fff;
+  color: var(--blackColor);
 }
 .educationarea__small__img__2 {
   position: relative;
@@ -601,6 +612,10 @@ header .user-nav .common_btn {
   padding: 15px 0px 15px 20px;
   border: 1px solid rgba(126, 133, 139, 0.18);
   border-radius: 5px;
+
+  p{
+    font-size: 13px;
+  }
 
 }
 
@@ -693,11 +708,19 @@ header .user-nav .common_btn {
   /* position: relative; */
   border-radius: var(--borderRadius3);
   background: var(--whiteColor);
+
+  h3 a{
+    color: var(--blackColor);
+  }
 }
 
 .popular_card:hover {
   background: var(--primaryColor);
   transform: translateY(-5px);
+  
+  h3 ,a,p{
+     color: var(--whiteColor);
+  }
 }
 
 .popular_card .service__content h3 a:hover {
@@ -715,15 +738,28 @@ header .user-nav .common_btn {
 
 .popular_third .common_btn:hover {
   background: transparent;
+  color: var(--secondaryColor);
 }
 .service__img {
   position: relative;
   margin-bottom: 10px;
+  display: flex;
 }
 
 .service__img svg {
   max-height: 60px;
   transition: var(--transition);
+}
+
+.service__img .icon__hover__img{
+  position: absolute;
+  top: 0;
+  left: 200px;
+  display: none;
+}
+
+.popular_card:hover .icon__hover__img{
+  display: block;
 }
 
 .service__icon__bg {
@@ -823,7 +859,7 @@ header .user-nav .common_btn {
 
 .courses_card {
   width: 100%;
-  background: var(--naveBlue);
+  background: var(--whiteColor);
   padding: 15px;
 }
 
@@ -1014,12 +1050,14 @@ header .user-nav .common_btn {
   .video_btn p {
     font-weight: 700;
     font-size: 20px;
+    color: var(--whiteColor);
   }
 }
 
 .registration_section .container .left_registration h2 {
   font-size: 38px;
   font-weight: 700;
+  color: var(--whiteColor);
 }
 
 .registration_section .right_registration {
@@ -1028,7 +1066,7 @@ header .user-nav .common_btn {
 
 .registerarea__form {
   box-shadow: 0 0 20px 10px rgba(95, 45, 237, 0.1);
-  background: var(--naveBlue);
+  background: var(--whiteColor);
   width: 75%;
   padding: 40px 35px 35px 35px;
   border-radius: 5px;
@@ -1054,6 +1092,7 @@ header .user-nav .common_btn {
   line-height: 54px;
   margin-bottom: 25px;
   outline: none;
+  background: #F0F1F3;
 }
 
 .registerarea__form form .half_input {
@@ -1127,7 +1166,7 @@ header .user-nav .common_btn {
 
 .registerarea__img .register__2 {
   position: absolute;
-  bottom: -286px;
+  bottom: -200px;
   left: 150px;
   animation: cir-anim 3s infinite ease-in;
 }
@@ -1342,6 +1381,7 @@ header .user-nav .common_btn {
 .faq_container {
   text-align: center;
   padding: 5rem;
+  /* background: #FFFFFF; */
 }
 
 .faq_mobile {
@@ -1389,11 +1429,11 @@ header .user-nav .common_btn {
   transition: all 0.3s ease;
 }
 .accordion-item {
-  border: 1px solid #f5f5f5;
-  border-radius: 0.75rem;
-  background: #170f2f;
-  overflow: hidden;
-  /* box-shadow: 0 10px 10px rgb(245 245 245 / .9); */
+    border: 1px solid #f5f5f5;
+    border-radius: .75rem;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 10px 10px rgb(245 245 245 / .9);
 }
 .accordion-button {
   width: 100%;
@@ -1405,8 +1445,8 @@ header .user-nav .common_btn {
 }
 
 .accordion-question {
-  font-size: 0.875rem;
-  color: var(--text-accordion);
+  font-size: 20px;
+  color: #586a92;
   padding-right: 0.5rem;
   flex-grow: 1;
 }
@@ -1426,10 +1466,9 @@ header .user-nav .common_btn {
 
 .accordion-answer {
   padding: 1rem;
-  font-size: 0.875rem;
-  /* color: var(--text-accor-para); */
-  /* opacity: 0; */
-  /* transition: opacity 0.3s ease-in-out; */
+  font-size: 16px;
+  color: #717173;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .load_more {
@@ -1437,7 +1476,7 @@ header .user-nav .common_btn {
   cursor: pointer;
   display: inline-block;
   text-decoration: underline;
-  color: var(--brown-color);
+  color: #b79d74;
   font-size: 17px;
   text-align: center;
   margin-top: 40px;
@@ -1513,15 +1552,17 @@ header .user-nav .common_btn {
   /* justify-content: center; */
   transition: transform 0.5s ease-in-out;
   width: 100%;
+  margin-left: 5px;
 }
 
 .testimonial-card {
   background: var(--whiteColor);
-  color: #fff;
   min-width: 48%;
+  /* height: fit-content; */
   padding: 50px;
   border-radius: 8px;
   margin: 0 10px;
+  box-shadow: 0px 30px 40px 0px rgba(1, 11, 60, 0.06);
   /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
 }
 
@@ -1558,6 +1599,7 @@ header .user-nav .common_btn {
   margin: 15px 0;
   font-size: 16px;
   line-height: 32px;
+  color: var(--contentColor);
 }
 .stars {
   color: orange;
@@ -1573,7 +1615,7 @@ header .user-nav .common_btn {
   top: 55%;
   transform: translateY(-50%);
   border: none;
-  color: white;
+  color: var(--blackColor);
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0.5rem;
@@ -2187,3 +2229,35 @@ header .dropdown-menu li {
 .courses_card.active {
     display: block; /* Show filtered cards */
 }
+
+
+.Fixed_WhatsApp_Icon {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 99999;
+    display: flex
+;
+    align-items: center;
+    /* gap: 4px; */
+}
+
+.Fixed_WhatsApp_Icon img {
+    height: 70px;
+    /* border-radius: 50%; */
+    /* box-shadow: 0px 0px 1px 0px gainsboro; */
+}
+
+
+/* Change the color of the main icon on hover */
+.popular_card:hover .service__icon path {
+  fill: #fff; /* Replace with your desired hover color */
+}
+
+
+/* Change the background of the service icon on hover */
+.popular_card:hover .service__bg__img .service__icon__bg path {
+  fill: #946efa; /* Replace with your desired hover background color */
+  fill-opacity: 0.3; /* Optional: Adjust opacity if needed */
+}
+
