@@ -67,6 +67,7 @@ body {
     rgba(12, 14, 43, 1) 50%,
     rgba(26, 16, 54, 1) 100%
   ); */
+    font-family: 'Outfit', sans-serif;
   color: var(--bodyColor);
   font-size: 16px;
   font-weight: 400;
@@ -835,6 +836,7 @@ header .user-nav .common_btn {
   font-weight: 700;
   color: var(--contentColor);
   font-size: 15px;
+  cursor: pointer;
 
   &:hover {
     color: var(--primaryColor);
@@ -1641,14 +1643,12 @@ header .user-nav .common_btn {
 }
 
 .read-more {
-  color: #007bff; /* Link color */
+  color: #616161; /* Link color */
   cursor: pointer;
   text-decoration: underline;
 }
 
-.read-more:hover {
-  color: #0056b3; /* Hover effect */
-}
+
 
 /* Brand Section   */
 
