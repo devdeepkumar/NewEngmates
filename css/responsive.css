@@ -75,6 +75,9 @@
   .popular_card_container {
     grid-template-columns: repeat(2, 1fr);
   }
+  .popular_third.flex_center{
+  justify-content: flex-start;
+}
 
   .grid-col-3 {
     grid-template-columns: repeat(2, 1fr);

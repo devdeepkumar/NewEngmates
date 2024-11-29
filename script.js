@@ -32,36 +32,43 @@ closeBtn.addEventListener("click", () => {
   }, 300); // Match this duration to the transition time
 });
 
-// // Select the header and hero section
-// const header = document.querySelector('.sticky');
-// const heroSection = document.querySelector('.hero');
+// Select the header and hero section
+const header = document.querySelector('.sticky');
+const heroSection = document.querySelector('.hero');
 
-// // Create the Intersection Observer
-// const observer = new IntersectionObserver(
-//   (entries) => {
-//     entries.forEach((entry) => {
-//       if (entry.isIntersecting) {
-//         // If hero is visible at more than 50%, set header to absolute
-//         header.style.position = 'absolute';
-//       } else {
-//         // If hero is scrolled past 50%, set header to fixed
-//         header.style.position = 'fixed';
-//         header.style.top = '0';
-//         header.style.zIndex = '1000'; // Ensure it's on top
-//         header.style.transition = ".4s";
-//          header.style.animation =
-//            "400ms ease-in-out 0s normal none 1 running fadeInDown";
+// Create the Intersection Observer
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        // If hero is visible at more than 50%, set header to absolute
+        header.style.position = 'absolute';
+      } else {
+        // If hero is scrolled past 50%, set header to fixed
+        header.style.position = 'fixed';
+         header.style.background = "#fff";
+        header.style.top = '0'; 
+        header.style.left = "0";
+        header.style.zIndex = '1000'; // Ensure it's on top
+        header.style.transition = ".4s";
+        header.style.animation =
+           "500ms ease-in-out 0s normal none 1 running fadeInDown";
 
-//       }
-//     });
-//   },
-//   {
-//     threshold: 0.5, // Trigger when 50% of the hero section is visible
-//   }
-// );
+      }
+    });
+  },
+  {
+    threshold: 0.5, // Trigger when 50% of the hero section is visible
+  }
+);
 
-// // Observe the hero section
-// observer.observe(heroSection);
+// Observe the hero section
+observer.observe(heroSection);
+
+
+
+
+
 
 // Testimonial JavaScript Started here
 
@@ -246,7 +253,7 @@ function closeModal(modalId) {
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".gridfilter_nav button");
+  const buttons = document.querySelectorAll(".filter");
   const cards = document.querySelectorAll(".courses_card");
 
   buttons.forEach((button) => {
@@ -271,16 +278,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // Trigger "All" filter on load
-  document.querySelector(".gridfilter_nav button.active").click();
+  document.querySelector(".filter.active").click();
 });
-
-
-
-
-
-
-
-
 
 
 
