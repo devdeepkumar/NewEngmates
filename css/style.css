@@ -38,7 +38,7 @@
   --lightGrey2: #7e858b;
   --secondaryColor: #f2277e;
   --darkcolor: #263546;
-  --darkgray: #9fa2ce;
+  --darkgray: #707070;
   --borderRadius3: 10px;
   --borderRadius: 4px;
   --greenColor: #44cea9;
@@ -1121,6 +1121,8 @@ header .user-nav .common_btn {
 .registerarea__form form .register__input.textarea {
   height: 155px;
   width: 100%;
+  resize: none;
+  line-height: 1.8;
 }
 
 .video__pop__btn {
@@ -1501,36 +1503,32 @@ header .user-nav .common_btn {
 }
 
 .hidden_accordion {
-  display: none; /* Initially hidden */
-  opacity: 0; /* Fully transparent */
-  transform: translateY(-10px); /* Slight upward position */
-  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  display: none;
 }
 
 .hidden_accordion.show {
-  display: block; /* Make it visible */
-  opacity: 1; /* Fully visible */
-  transform: translateY(0); /* Reset position */
+  display: block; 
+
 }
 
 .accordion-content {
-  max-height: 0; /* Initially collapsed */
-  opacity: 0; /* Fully transparent */
-  overflow: hidden; /* Hide overflowing content */
-  transition: max-height 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+  max-height: 0; 
+  opacity: 0; 
+  overflow: hidden; 
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 .accordion-content.show {
-  max-height: 200px; /* Adjust based on content size */
-  opacity: 1; /* Fully visible */
+  max-height: 200px; 
+  opacity: 1; 
 }
 
 .accordion-icon {
-  transition: transform 0.3s ease; /* Smooth rotation */
+  transition: transform 0.3s ease; 
 }
 
 .accordion-icon.rotate {
-  transform: rotate(180deg); /* Rotate 180 degrees */
+  transform: rotate(180deg); 
 }
 
 /* Testimonial Section  */
@@ -1801,7 +1799,9 @@ header .user-nav .common_btn {
 }
 
 /* Footer Section  */
-
+footer{
+  background: #f7eff1;
+}
 .footer-container{
   /* background: #0C0E2B; */
 }
@@ -1852,6 +1852,7 @@ header .user-nav .common_btn {
   font-size: 22px;
   margin-bottom: 15px;
   font-weight: 700;
+  color: #444444;
 }
 .footer-column ul {
   list-style: none;
@@ -1866,7 +1867,7 @@ header .user-nav .common_btn {
   color: var(--primaryColor);
 }
 .footer-column ul li a {
-  color: #989bc5;
+  color: #707070;
   font-size: 16px;
   font-weight: 400;
   transition: 0.3s;
@@ -2123,6 +2124,7 @@ header .user-nav .common_btn {
     padding: 1rem 2rem;
     overflow-y: auto;
 }
+
 
 #footer p {
     color: #919191;

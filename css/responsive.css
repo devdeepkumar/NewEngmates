@@ -127,6 +127,8 @@
   .Fixed_WhatsApp_Icon{
     display: none;
   }
+
+ 
 }
 
 /* for medium device  */
@@ -345,6 +347,12 @@
   .banner_content_area{
     gap: 20px;
     padding: 15px;
+  }
+   .footer_heading .footer_input{
+    display: block;
+    input{
+      width: 100%;margin-block: 15px;
+    }
   }
 }
 
