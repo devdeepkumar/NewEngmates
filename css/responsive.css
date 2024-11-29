@@ -4,11 +4,11 @@
   header {
     padding-inline: 3%;
   }
-  header .nav_btn{
+  header .nav_btn {
     display: none;
   }
 
-  .mobile_nav_link{
+  .mobile_nav_link {
     display: block;
   }
 
@@ -75,9 +75,9 @@
   .popular_card_container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .popular_third.flex_center{
-  justify-content: flex-start;
-}
+  .popular_third.flex_center {
+    justify-content: flex-start;
+  }
 
   .grid-col-3 {
     grid-template-columns: repeat(2, 1fr);
@@ -124,11 +124,9 @@
   .event-card:nth-child(even) {
     flex-direction: column-reverse;
   }
-  .Fixed_WhatsApp_Icon{
+  .Fixed_WhatsApp_Icon {
     display: none;
   }
-
- 
 }
 
 /* for medium device  */
@@ -165,11 +163,11 @@
     width: 100%;
   }
 
-  .days_btns_container  ul{
+  .days_btns_container ul {
     display: flex;
-   flex-wrap: wrap;
+    flex-wrap: wrap;
 
-    li{
+    li {
       width: 48%;
     }
   }
@@ -263,9 +261,9 @@
   }
 
   .educationarea__small__img__2 {
-    right:-20px;
+    right: -20px;
     top: -360px;
-    width:285px
+    width: 285px;
   }
 
   .hero__shape__1 {
@@ -283,7 +281,7 @@
   .event-card {
     background: var(--whiteColor);
   }
-  .testimonial_section{
+  .testimonial_section {
     padding-bottom: 0;
   }
 
@@ -310,48 +308,47 @@
     line-height: 60px;
     margin-right: 0;
   }
- 
 
   .video_btn p {
-        font-weight: 700 !important;
-        font-size: 13px !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
   }
 
-  .days_btns_container ul li{
+  .days_btns_container ul li {
     padding: 5px 0;
   }
-  .grid__filter button::before{
-    transition: .6s ease-in;
+  .grid__filter button::before {
+    transition: 0.6s ease-in;
   }
-  .grid__filter button.active::before{
+  .grid__filter button.active::before {
     bottom: -2px;
   }
-  .grid__filter button::before{
+  .grid__filter button::before {
     bottom: -2px;
   }
-.registerarea__form form .register__input{
-  line-height: normal;
-}
+  .registerarea__form form .register__input {
+    line-height: normal;
+  }
 
-  .registration_section{
+  .registration_section {
     margin-bottom: 0;
   }
- .faq_container{
-  padding: 0;
- }
-  .banner_content_area{
-    grid-template-columns: repeat(1,1fr);
-
+  .faq_container {
+    padding: 0;
+  }
+  .banner_content_area {
+    grid-template-columns: repeat(1, 1fr);
   }
 
-  .banner_content_area{
+  .banner_content_area {
     gap: 20px;
     padding: 15px;
   }
-   .footer_heading .footer_input{
+  .footer_heading .footer_input {
     display: block;
-    input{
-      width: 100%;margin-block: 15px;
+    input {
+      width: 100%;
+      margin-block: 15px;
     }
   }
 }
@@ -364,8 +361,8 @@
   }
 
   .about_section .right_about {
-        padding-top: 125px;
-    }
+    padding-top: 125px;
+  }
 
   .courses_navbar {
     padding: 10px;
@@ -384,33 +381,33 @@
   }
 
   .hero-container .hero_right .education_4 {
-        right: 24px;
-        z-index: -0909;
+    right: 24px;
+    z-index: -0909;
   }
 
-  .popular_second p{
+  .popular_second p {
     margin-bottom: 0;
   }
 
-  .popular_third .common_btn{
+  .popular_third .common_btn {
     margin-block: 0;
   }
 
-  .sub_heading{
+  .sub_heading {
     flex-direction: column;
   }
-  .testimonial-card{
+  .testimonial-card {
     padding: 20px;
   }
-  
-  .modal-content{
+
+  .modal-content {
     width: 100%;
   }
   .accordion-question {
     font-size: 17px;
   }
 
-  .right_about p br{
+  .right_about p br {
     display: none;
   }
 }
