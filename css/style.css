@@ -509,6 +509,7 @@ header .user-nav .common_btn {
 .hero-container .hero_right .education_1 {
   position: absolute;
   right: 0;
+  width: 100%;
   /* z-index: 9; */
 }
 
@@ -517,6 +518,7 @@ header .user-nav .common_btn {
   bottom: -165px;
   left: 100px;
   z-index: 10;
+  width: 100%;
 }
 .hero-container .hero_right .education_3 {
   position: absolute;
@@ -680,6 +682,7 @@ header .user-nav .common_btn {
 
 .about_container .left_about .about_image_container .about1 {
   position: absolute;
+  width: 80%;
 }
 
 .right_about .about_list li {
