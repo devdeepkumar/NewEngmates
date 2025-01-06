@@ -2108,7 +2108,7 @@ footer {
 .modal-title {
   font-size: 1.25rem;
   font-weight: 700;
-  color: #c77201;
+  color: var(--primaryColor);
   line-height: 1.5;
   margin-bottom: 0;
 }
@@ -2131,7 +2131,7 @@ footer {
 .section h3 {
   font-size: 0.875rem;
   font-weight: 700;
-  color: #c77201;
+  color: var(--primaryColor);
   margin-bottom: 0.5rem;
 }
 
@@ -2155,7 +2155,7 @@ footer {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  background-color: #c77201 !important;
+  background-color: var(--primaryColor) !important;
   border: 1px solid var(--primary-purple);
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
@@ -2196,7 +2196,7 @@ footer {
   color: #fff;
   border: none;
   cursor: pointer;
-  background: #c77201 !important;
+  background: var(--primaryColor) !important;
   color: white;
 }
 
