@@ -318,13 +318,14 @@ header .user-nav .common_btn {
 .mobile_nav {
   box-shadow: 0 0 50px 10px rgba(95, 45, 237, 0.1);
   padding: 40px 30px 50px;
-  background: #f6f6f6;
+  background: #f7eff1;
   height: 100vh;
   position: absolute;
   top: 0;
   right: -25px;
   z-index: 9;
   width: 340px;
+
 }
 
 /* header.sticky { 
@@ -653,13 +654,13 @@ header .user-nav .common_btn {
 
 .training_container .taining_card .icon_side {
   background: rgba(142, 102, 255, 0.05);
-  padding: 20px;
+  padding: 5px;
   border-radius: 50%;
   margin-right: 30px;
 }
 .training_container .taining_card .icon_side img {
-  height: 40px;
-  width: 40px;
+  height: 80px;
+  width: 80px;
 }
 
 .training_container .content_side {
@@ -1132,7 +1133,7 @@ header .user-nav .common_btn {
   width: 80px;
   height: 80px;
   line-height: 80px;
-  background: var(--secondaryColor);
+  background: #f04574;
   color: var(--whiteColor);
   border-radius: 100%;
   text-align: center;
@@ -2271,4 +2272,8 @@ header .dropdown-menu li {
 }
 
 
+
+.small_text{
+  visibility: hidden;
+}
 
