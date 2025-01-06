@@ -3,18 +3,181 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Home 2|EduRock Education</title>
+      <title>Engmates English Speaking Course Institute</title>
       <link rel="stylesheet" href="./css/style.css">
       <link rel="stylesheet" href="./css/responsive.css">
       <link rel="stylesheet" href="./css/animation.css">
+      <link rel="stylesheet" href="./css/popup.css">
    </head>
    <body>
-      <div id="back__preloader">
+      <!-- <div id="back__preloader">
          <div id="back__circle_loader"></div>
          <div class="back__loader_logo">
             <img loading="lazy" src="images/pre.png" alt="Preload">
          </div>
+      </div> -->
+
+      <!-- Clendly  -->
+
+      <div class="popUpCalendly">
+    <div class="popup_cal_scheduler-container">
+      <div class="close_calendly"><img src="./images/close.png" alt=""></div>
+      <div class="popup_cal_left-panel">
+        <div class="previous_btn_popup">
+          <img src="./images/left.png" alt="">
+        </div>
+        <div class="popup_cal_logo">
+          <img src="./images/engmates.svg" alt="" width="200">
+        </div>
+        <div class="meeting_detail">
+          <div class="popup_cal_meeting-title">Schedule Your Consultaion</div>
+          <div class="popup_cal_duration time_date_info hide-in-mbl">
+            <img src="./images/clock copy.png" alt="">
+            <div class="time_display">10:00 Pm</div>
+          </div>
+          <div class="time_date_info hide-in-mbl">
+            <img src="./images/calendar (1).png" alt="">
+            <div class="popup_cal_selected-date">Monday, January 6</div>
+          </div>
+
+          <div class="time_date_info hide-in-mbl" style="padding-left: 1px;">
+            <img src="./images/planet-earth.png" alt="">
+            Indian Standard Time
+          </div>
+        </div>
       </div>
+
+      <div class="right_container_modal">
+        <div class="popup_cal_right-panel">
+          <div class="popup_cal_calendar-section">
+
+            <div class="">
+              <div class="popup_cal_main-header hide-in-mbl">
+                <h2>Select a Date &amp; Time</h2>
+              </div>
+
+              <div class="cal_time d-flex">
+                <div class="popup_cal_calendar">
+                  <div class="popup_cal_month-selector">
+                    <button id="popup_cal_prev-month" style="transform: rotate(90deg);" disabled="" class="popup_cal_disabled">
+                      <img src="./images/arrow-down-sign-to-navigate.svg" alt="">
+                    </button>
+                    <div id="popup_cal_current-month">January 2025</div>
+                    <button id="popup_cal_next-month" style="transform: rotate(270deg);">
+                      <img src="./images/arrow-down-sign-to-navigate.svg" alt="">
+                    </button>
+                  </div>
+                  <div class="popup_cal_weekdays">
+                    <div>MON</div>
+                    <div>TUE</div>
+                    <div>WED</div>
+                    <div>THU</div>
+                    <div>FRI</div>
+                    <div>SAT</div>
+                    <div>SUN</div>
+                  </div>
+                  <div class="popup_cal_days" id="popup_cal_calendar-days"><div class="popup_cal_day popup_cal_disabled"></div><div class="popup_cal_day popup_cal_disabled"></div><div class="popup_cal_day popup_cal_disabled">1</div><div class="popup_cal_day popup_cal_disabled">2</div><div class="popup_cal_day popup_cal_disabled">3</div><div class="popup_cal_day popup_cal_disabled">4</div><div class="popup_cal_day popup_cal_disabled popup_cal_sunday">5</div><div class="popup_cal_day popup_cal_today popup_cal_selected">6</div><div class="popup_cal_day">7</div><div class="popup_cal_day">8</div><div class="popup_cal_day">9</div><div class="popup_cal_day">10</div><div class="popup_cal_day">11</div><div class="popup_cal_day popup_cal_disabled popup_cal_sunday">12</div><div class="popup_cal_day">13</div><div class="popup_cal_day">14</div><div class="popup_cal_day">15</div><div class="popup_cal_day">16</div><div class="popup_cal_day">17</div><div class="popup_cal_day">18</div><div class="popup_cal_day popup_cal_disabled popup_cal_sunday">19</div><div class="popup_cal_day">20</div><div class="popup_cal_day">21</div><div class="popup_cal_day">22</div><div class="popup_cal_day">23</div><div class="popup_cal_day">24</div><div class="popup_cal_day">25</div><div class="popup_cal_day popup_cal_disabled popup_cal_sunday">26</div><div class="popup_cal_day">27</div><div class="popup_cal_day">28</div><div class="popup_cal_day">29</div><div class="popup_cal_day">30</div><div class="popup_cal_day">31</div></div>
+                  <div class="popup_cal_timezone-selector">
+                    <p>Time Zone</p>
+                    <div class="time_option">
+                      <img src="./images/globe-earth.png" alt="">
+                      <select>
+                        <option>Indian Standard Time</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="right_time_container">
+                  <div class="popup_cal_selected-date">Monday, January 6</div>
+            
+                  <div class="popup_cal_time-slots-section"><div class="popup_cal_button-group"><div class="popup_cal_time-slot-selected">12:30PM</div><button class="popup_cal_next-button">Next</button></div><div class="popup_cal_button-group"><div class="popup_cal_time-slot-selected">01:00PM</div><button class="popup_cal_next-button">Next</button></div><div class="popup_cal_button-group"><div class="popup_cal_time-slot-selected">01:30PM</div><button class="popup_cal_next-button">Next</button></div><div class="popup_cal_button-group"><div class="popup_cal_time-slot-selected">02:00PM</div><button class="popup_cal_next-button">Next</button></div><div class="popup_cal_button-group"><div class="popup_cal_time-slot-selected">02:30PM</div><button class="popup_cal_next-button">Next</button></div><div class="popup_cal_button-group"><div class="popup_cal_time-slot-selected">03:00PM</div><button class="popup_cal_next-button">Next</button></div><div class="popup_cal_button-group"><div class="popup_cal_time-slot-selected">03:30PM</div><button class="popup_cal_next-button">Next</button></div><div class="popup_cal_button-group"><div class="popup_cal_time-slot-selected">04:00PM</div><button class="popup_cal_next-button">Next</button></div><div class="popup_cal_button-group"><div class="popup_cal_time-slot-selected">04:30PM</div><button class="popup_cal_next-button">Next</button></div><div class="popup_cal_button-group"><div class="popup_cal_time-slot-selected">05:00PM</div><button class="popup_cal_next-button">Next</button></div><div class="popup_cal_button-group"><div class="popup_cal_time-slot-selected">05:30PM</div><button class="popup_cal_next-button">Next</button></div><div class="popup_cal_button-group"><div class="popup_cal_time-slot-selected">06:00PM</div><button class="popup_cal_next-button">Next</button></div></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- ===form== -->
+        <form class="popupForm" action="mail/mail6.php" method="post">
+
+          <input type="text" name="selected_date" class="selected_date_Input" hidden="" style="display: none;">
+          <input type="text" name="selected_time" class="selected_time_Input" hidden="" style="display: none;">
+
+          <div class="heading">
+            <h2>Enter Details</h2>
+          </div>
+          <div class="form_content">
+            <div class="name_field">
+              <div class="input_field_row">
+                <!-- <label for="name">Name*</label> -->
+                <input type="text" placeholder="Name*" name="name" required="">
+              </div>
+              <div class="input_field_row">
+                <!-- <label for="name">Email*</label> -->
+                <input type="text" placeholder="Email*" name="email" required="">
+              </div>
+            </div>
+            <div class="email_field">
+              <div class="input_field_row">
+                <!-- <label for="name">Phone*</label> -->
+                <input type="text" placeholder="Phone Number*" name="phone" required="">
+              </div>
+              <div class="input_field_row">
+                <!-- <label for="name">Clinic Name*</label> -->
+                <input type="text" pattern="[6-9][0-9]{9}" class="User_Number" placeholder="Alternative Number" name="alter_num">
+              </div>
+              <!-- <div class="add_guest">Add Guest</div> -->
+            </div>
+
+            <div class="email_field">
+              <div class="input_field_row">
+                <!-- <label for="name">City</label> -->
+                <input type="text" placeholder="Your Location*" name="city" required="">
+              </div>
+              <!-- <div class="input_field_row">
+                <label for="name">Currently Using Software?</label>
+                <input type="text" placeholder="Currently Using Software?" name="is_using_software" />
+                <select class="form-control mb-3" name="is_using_software" required>
+                  <option value="" disabled selected>Currently Using Any Software?</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div> -->
+            </div>
+            <div class="email_field">
+              <div class="input_field_row">
+                <textarea name="message" rows="4" placeholder="Share the problem you're facing" id=""></textarea>
+              </div>
+            </div>
+            <!-- <div class="email_field">
+              <div class="input_field_row" id="add_guestInput">
+                <label for="name">Guest Email</label>
+                <div id="email-container" class="email-input-container">
+                  <input type="text" name="invities" id="email-input" placeholder="Add Guest Emails"
+                    class="email-input" />
+                </div>
+              </div>
+              <div class="add_guest">Add Invities Emails</div>
+            </div> -->
+            <!-- <div class="message_field">
+          <label>Please share anything that will help prepare for our
+            meeting.</label>
+          <textarea name="message" rows="2" id=""></textarea>
+        </div> -->
+            <!-- <div class="footer_text">
+          By proceeding, you confirm that you have read and agree to
+          Calendly's Terms of Use and Privacy Notice.
+        </div> -->
+        <div class="pop-up-btn-div">
+          <button type="submit" name="submit">Submit</button>
+        </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
       <!-- Header Start Here  -->
       <header class="sticky">
          <div class="logo">
@@ -63,7 +226,7 @@
                </div> -->
          </div>
          <div class="nav_btn">
-            <button class="common_btn">Get Free Consultation</button>
+            <a href="tel:+91999999999"><button class="common_btn">Whatsapp Us</button></a>
          </div>
          <div class="mobile_nav_link">
             <div class="menue">
@@ -130,7 +293,7 @@
                   <p>Master Communication Skills and Take Your Career to New Heights.</p>
                   <div class="hero_input">
                      <input type="text" placeholder="Your Phone Number">
-                     <button class="hero_btn">Request Free Call Back</button>
+                     <button class="hero_btn openPopupModal">Request Free Call Back</button>
                   </div>
                </div>
                <div class="hero_right">
@@ -138,7 +301,7 @@
                      <img loading="lazy" src="./images/education.png" alt="image1" class="education_1">
                      <img loading="lazy" src="./images/education__1.png" alt="image2" class="education_2">
                      <img loading="lazy" src="./images/education__2.png" alt="image2" class="education_3" >
-                     <img loading="lazy" src="./images/education__3.png" alt="image2" class="education_4" >
+                     <!-- <img loading="lazy" src="./images/education__3.png" alt="image2" class="education_4" > -->
                   </div>
                   <div class="educationarea__small__img">
                      <a href="#">
@@ -148,15 +311,15 @@
                      <img loading="lazy" class="education__img__8" src="images/education__7.png" alt="education">
                      </a>
                      <div class="educationarea__small__para">
-                        <p>Join over <span>4000+</span> students</p>
+                        <p><span>100000+</span> lives impacted</p>
                      </div>
                   </div>
                   <div class="educationarea__small__img__2">
                      <img loading="lazy" src="images/about_16.png" alt="educator">
                      <div class="educationarea__small__content">
-                        <span>Congratulations!!</span>
+                        <span>Great News!!</span>
                         <br>
-                        <span>Your Admission Completed</span>
+                        <span>Grab 20% Off Now</span>
                      </div>
                   </div>
                </div>
@@ -224,7 +387,7 @@
                      <li><img loading="lazy" src="./images/check-mark.svg" alt="checkmarks">Our course offerings include Basic, Advanced &  Public Speaking.</li>
                   </ul>
                </div>
-               <button class="common_btn">More About <img loading="lazy" src="./images/arrow-right.svg" alt=""></button>
+               <button class="common_btn openPopupModal">Get Free Consultation <img loading="lazy" src="./images/arrow-right.svg" alt=""></button>
             </div>
          </div>
       </section>
@@ -240,7 +403,9 @@
                   <p> Master key skills that will boost your confidence, communication, and career success.</p>
                </div>
                <div class="popular_third flex_center">
+               <a href="#mainform">
                   <button class="common_btn"> Book Appointment <img loading="lazy" src="./images/arrow-right.svg" alt=""></button>
+               </a>     
                </div>
             </div>
             <div class="popular_card_container grid-col-4">
@@ -533,7 +698,7 @@
                   <div class="instructor_container">
                      <div class="instructor">
                         <img src="./images/grid_small_1.jpg" alt="">
-                        <span>Micle Jhon</span>
+                        <span>Harish Samant</span>
                      </div>
                      <div class="course_rating">
                         <img src="./images/star.svg" alt="Star">
@@ -541,7 +706,7 @@
                         <img src="./images/star.svg" alt="Star">
                         <img src="./images/star.svg" alt="Star">
                         <img src="./images/star.svg" alt="Star">
-                        <span>(44)</span>
+                        <span>(12.9K+)</span>
                      </div>
                   </div>
                </div>
@@ -569,7 +734,7 @@
                   <div class="instructor_container">
                      <div class="instructor">
                         <img src="./images/grid_small_1.jpg" alt="">
-                        <span>Micle Jhon</span>
+                        <span>Mohit Pal</span>
                      </div>
                      <div class="course_rating">
                         <img src="./images/star.svg" alt="Star">
@@ -577,7 +742,7 @@
                         <img src="./images/star.svg" alt="Star">
                         <img src="./images/star.svg" alt="Star">
                         <img src="./images/star.svg" alt="Star">
-                        <span>(44)</span>
+                        <span>(18K+)</span>
                      </div>
                   </div>
                </div>
@@ -605,7 +770,7 @@
                   <div class="instructor_container">
                      <div class="instructor">
                         <img src="./images/grid_small_1.jpg" alt="">
-                        <span>Micle Jhon</span>
+                        <span>Anuradha Singh</span>
                      </div>
                      <div class="course_rating">
                         <img src="./images/star.svg" alt="Star">
@@ -613,7 +778,7 @@
                         <img src="./images/star.svg" alt="Star">
                         <img src="./images/star.svg" alt="Star">
                         <img src="./images/star.svg" alt="Star">
-                        <span>(44)</span>
+                        <span>(23K+)</span>
                      </div>
                   </div>
                </div>
@@ -642,7 +807,7 @@
                   <div class="instructor_container">
                      <div class="instructor">
                         <img src="./images/grid_small_1.jpg" alt="">
-                        <span>Micle Jhon</span>
+                        <span>Prashant Chaudhary</span>
                      </div>
                      <div class="course_rating">
                         <img src="./images/star.svg" alt="Star">
@@ -650,7 +815,7 @@
                         <img src="./images/star.svg" alt="Star">
                         <img src="./images/star.svg" alt="Star">
                         <img src="./images/star.svg" alt="Star">
-                        <span>(44)</span>
+                        <span>(14k+)</span>
                      </div>
                   </div>
                </div>
@@ -678,7 +843,7 @@
                   <div class="instructor_container">
                      <div class="instructor">
                         <img src="./images/grid_small_1.jpg" alt="">
-                        <span>Micle Jhon</span>
+                        <span>Sakshi Sharma</span>
                      </div>
                      <div class="course_rating">
                         <img src="./images/star.svg" alt="Star">
@@ -686,7 +851,7 @@
                         <img src="./images/star.svg" alt="Star">
                         <img src="./images/star.svg" alt="Star">
                         <img src="./images/star.svg" alt="Star">
-                        <span>(44)</span>
+                        <span>(21K+)</span>
                      </div>
                   </div>
                </div>
@@ -714,7 +879,7 @@
                   <div class="instructor_container">
                      <div class="instructor">
                         <img src="./images/grid_small_1.jpg" alt="">
-                        <span>Micle Jhon</span>
+                        <span>Kanchan Rattan</span>
                      </div>
                      <div class="course_rating">
                         <img src="./images/star.svg" alt="Star">
@@ -722,7 +887,7 @@
                         <img src="./images/star.svg" alt="Star">
                         <img src="./images/star.svg" alt="Star">
                         <img src="./images/star.svg" alt="Star">
-                        <span>(44)</span>
+                        <span>(16k+)</span>
                      </div>
                   </div>
                </div>
@@ -738,13 +903,13 @@
                   <h2 class="heading_2">Get Expert Advice at <span> No Cost</span></h2>
                   <div class="video_btn flex_center">
                      <div class="video__pop__btn">
-                        <a class="video-btn" href="https://www.youtube.com/watch?v=5WNb5AjNWaM"> <img loading="lazy" src="images/video.png" alt="" width="20px"></a>
+                        <a class="video-btn" href="https://www.youtube.com/watch?v=zLvGck8AMYo"> <img loading="lazy" src="images/video.png" alt="" width="20px"></a>
                      </div>
                      <p>Take the First Step Towards a Successful & Confident Life</p>
                   </div>
                </div>
                <div class="right_registration">
-                  <div class="registerarea__form">
+                  <div class="registerarea__form" id="mainform">
                      <div class="registerarea__form__heading">
                         <h4 class=""> Enter Your Details</h4>
                      </div>
@@ -755,7 +920,7 @@
                            <input class="register__input " type="text" placeholder="Phone">
                         </div>
                         <input class="register__input" type="text" placeholder="Address">
-                        <textarea class="register__input textarea" name="#" id="#" cols="30" rows="10">Share the problem you’re facing</textarea>
+                        <textarea class="register__input textarea" name="#" id="#" cols="30" rows="10" placeholder:"comments"></textarea>
                         <div class="registerarea__button">
                            <a class="common_btn" href="#">Submit
                            <img src="./images/arrow-right.svg" alt="">
@@ -1018,7 +1183,7 @@
          <div class="container">
             <div class="testimonial_heder">
                <div class="small_text">Reviews</div>
-               <h2 class="heading_2">Students’ <span>Success</span> Stories</span></h2>
+               <h2 class="heading_2">Why <span>Learners </span> Love Us?</span></h2>
             </div>
             <div class="arrow left-arrow">&larr;</div>
             <div class=" testimonial-container-wrapper">
@@ -1029,7 +1194,7 @@
                            <img src="./images/kanika-testimonial.webp" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Kanika Singh</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1050,7 +1215,7 @@
                            <img src="./images/avneet-kaur-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Avneet Kaur</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1073,7 +1238,7 @@
                            <img src="./images/naushad-malik-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Naushad Malik</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1096,7 +1261,7 @@
                            <img src="./images/ruchi-sejwal-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Ruchi Sejwal</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1119,7 +1284,7 @@
                            <img src="./images/davneet-kaur-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Davneet Kaur</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1142,7 +1307,7 @@
                            <img src="./images/nitasha-arora-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Nitasha Arora</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1165,7 +1330,7 @@
                            <img src="./images/umesh-naik-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Dr. Umesh Naik</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1188,7 +1353,7 @@
                            <img src="./images/shubham-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Shubham Roy</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1211,7 +1376,7 @@
                            <img src="./images/nirmala-pathak-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Nirmala Pathak</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1233,7 +1398,7 @@
                            <img src="./images/visheta-sharma-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Visheta Sharma</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1255,7 +1420,7 @@
                            <img src="./images/harish-samant-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Harish Samantt</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1278,7 +1443,7 @@
                            <img src="./images/abhishek-khurana-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Abhishek Khurana</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1301,7 +1466,7 @@
                            <img src="./images/jagjeevan-singh-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Jagjeevan Singh</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1324,7 +1489,7 @@
                            <img src="./images/aman-passi-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Aman Passir</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1347,7 +1512,7 @@
                            <img src="./images/anuradha-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Anuradha</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1370,7 +1535,7 @@
                            <img src="./images/shivam-pandey-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Shivam Pandey</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1393,7 +1558,7 @@
                            <img src="./images/simran-tanwar-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Simran Tanwar</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1416,7 +1581,7 @@
                            <img src="./images/manisha-mishra-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Manisha Mishra</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1439,7 +1604,7 @@
                            <img src="./images/asif-khan-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Asif Khan</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1462,7 +1627,7 @@
                            <img src="./images/simran-tanwar-testimonial.png" alt="User Image">
                            <div class="user_detail">
                               <span class="testimonial-name">Nidhi Saxena</span>
-                              <span class="testimonial-role">UI/UX Designer</span>
+                              <!-- <span class="testimonial-role">UI/UX Designer</span> -->
                            </div>
                         </div>
                         <div class="stars">
@@ -1485,210 +1650,76 @@
          </div>
       </section>
       <!-- Brand Section  -->
-      <!-- <section class="brand_section">
-         <div class="container">
-            <div class="brand_heading">
-               <h2 class="heading_2 ">Our Students Who Are Now <span>Working</span> In</span></h2>
+    <section class="brand_section">
+    <div class="container">
+        <div class="brand_heading">
+            <h2 class="heading_2">Our Students Who Are Now <span>Working</span> In</h2>
+        </div>
+        <div class="brandarea__wraper">
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/muthoot-finance.webp" alt="brand"></a>
             </div>
-            <div class="brandarea__wraper">
-               <div class="brandarea__img">
-                  <a href="#"><img loading="lazy" src="./images/muthoot-finance.webp" alt="brand"></a>
-               </div>
-               <div class="brandarea__img">
-                  <a href="#"><img loading="lazy" src="./images/swiggy-logo.png" alt="brand"></a>
-               </div>
-               <div class="brandarea__img">
-                  <a href="#"><img loading="lazy" src="./images/blk-logo.png" alt="brand"></a>
-               </div>
-               <div class="brandarea__img">
-                  <a href="#"><img loading="lazy" src="./images/mercedes-logo.png" alt="brand"></a>
-               </div>
-               <div class="brandarea__img">
-                  <a href="#"><img loading="lazy" src="./images/punjab-and-sind-logo.png" alt="brand"></a>
-               </div> -->
-      <!-- <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/hdf bank logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/indigo-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/pnb-metlife.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/google-logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/wipro-logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/deloitte.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/infosys-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/aiims-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/dakin-logo.gif" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/icici-logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/zomato_logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/dominos-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/qatar-airways-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/flipkart-Logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/amazon_logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/benz-logo.webp" alt="brand"></a>
-         </div> -->
-      <!-- </div>
-         <div class="brandarea__wraper"> -->
-      <!-- <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/muthoot-finance.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/swiggy-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/blk-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/mercedes-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/punjab-and-sind-logo.png" alt="brand"></a>
-         </div> -->
-      <!-- <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/hdf bank logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/indigo-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/pnb-metlife.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/google-logo.webp" alt="brand"></a>
-         </div> -->
-      <!-- <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/wipro-logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/deloitte.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/infosys-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/aiims-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/dakin-logo.gif" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/icici-logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/zomato_logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/dominos-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/qatar-airways-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/flipkart-Logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/amazon_logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/benz-logo.webp" alt="brand"></a>
-         </div> -->
-      <!-- </div>
-         <div class="brandarea__wraper"> -->
-      <!-- <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/muthoot-finance.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/swiggy-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/blk-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/mercedes-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/punjab-and-sind-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/hdf bank logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/indigo-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/pnb-metlife.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/google-logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/wipro-logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/deloitte.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/infosys-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/aiims-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/dakin-logo.gif" alt="brand"></a>
-         </div> 
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/icici-logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/zomato_logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/dominos-logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/qatar-airways-logo.png" alt="brand"></a>
-         </div> -->
-      <!-- <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/flipkart-Logo.png" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/amazon_logo.webp" alt="brand"></a>
-         </div>
-         <div class="brandarea__img">
-         <a href="#"><img loading="lazy" src="./images/benz-logo.webp" alt="brand"></a>
-         </div> 
-         </div>
-         
-         </div>
-         </section> -->
-      <!-- <section class="banner">
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/swiggy-logo.png" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/blk-logo.png" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/mercedes-logo.png" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/punjab-and-sind-logo.png" alt="brand"></a>
+            </div>
+            
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/indigo-logo.png" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/pnb-metlife.png" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/google-logo.webp" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/wipro-logo.webp" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/deloitte.png" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/infosys-logo.png" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/aiims-logo.png" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/dakin-logo.gif" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/icici-logo.webp" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/zomato_logo.webp" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/dominos-logo.png" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/qatar-airways-logo.png" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/flipkart-logo.png" alt="brand"></a>
+            </div>
+            <div class="brandarea__img">
+                <a href="#"><img loading="lazy" src="./images/amazon_logo.webp" alt="brand"></a>
+            </div>
+          
+        </div>
+    </div>
+</section>
+
+       <!-- <section class="banner">
          <div class="banner_content_area">
             <div class="left-area">
                <div class="image">
@@ -1797,26 +1828,26 @@
                   </div>
                   <!-- Recent Posts -->
                   <div class="footer-column recent-posts">
-                     <h3>Recent Post</h3>
+                     <h3> Upcoming Courses</h3>
                      <div class="recent-post">
                         <img src="./images/footer__1.png" alt="Post Image">
                         <div>
-                           <span>02 Apr 2024</span>
-                           <p>Best Your Business</p>
+                           <span>20th Jan</span>
+                           <p>Public Speaking Master Course</p>
                         </div>
                      </div>
                      <div class="recent-post">
                         <img src="./images/footer__2.png" alt="Post Image">
                         <div>
-                           <span>02 Apr 2024</span>
-                           <p>Keep Your Business</p>
+                           <span>27th Jan</span>
+                           <p>English Writing Course</p>
                         </div>
                      </div>
                      <div class="recent-post">
                         <img src="./images/footer__3.png" alt="Post Image">
                         <div>
-                           <span>02 Apr 2024</span>
-                           <p>Nice Your Business</p>
+                           <span>3rd Feb</span>
+                           <p>Online Public Speaking Course</p>
                         </div>
                      </div>
                   </div>
@@ -2863,5 +2894,6 @@
          </a>
       </div>
       <script src="./script.js"></script>
+      <script src="./js/popup.js"></script>
    </body>
 </html>

@@ -46,7 +46,7 @@ const observer = new IntersectionObserver(
       } else {
         // If hero is scrolled past 50%, set header to fixed
         header.style.position = 'fixed';
-         header.style.background = "#fff";
+        header.style.backgroundColor = "rgb(240, 226, 229)";
         header.style.top = '0'; 
         header.style.left = "0";
         header.style.zIndex = '1000'; // Ensure it's on top
@@ -280,6 +280,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Trigger "All" filter on load
   document.querySelector(".filter.active").click();
 });
+
+
+
+
 
 
 

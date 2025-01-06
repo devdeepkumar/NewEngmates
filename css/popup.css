@@ -1,0 +1,1267 @@
+
+.popUpCalendly {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999999;
+    background-color: rgba(0, 0, 0, .4);
+
+}
+
+.popup_cal_scheduler-container {
+    width: 100%;
+    max-width: 1100px;
+    overflow: hidden;
+    height: 85vh;
+    margin: 0 auto;
+    margin-inline: 24px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%);
+    /* display: grid; */
+    /* grid-template-columns: 300px 1fr; */
+    display: flex;
+    position: relative;
+}
+
+.close_calendly {
+    position: absolute;
+    top: 19px;
+    right: 22px;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #ffdd9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999999999;
+}
+
+.close_calendly img {
+    width: 17px;
+    height: 17px;
+}
+
+.popup_cal_left-panel {
+    /* padding: 40px; */
+    border-right: 1px solid #e5e5e5;
+    position: relative;
+    box-shadow: 0px 0px 7px 0px #e5e5e5;
+    z-index: 999;
+}
+
+.previous_btn_popup {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* border: 1px solid gray; */
+    transition: all .3s ease-in-out;
+    background-color: #ffdd9f;
+}
+
+.previous_btn_popup img {
+    width: 20px;
+    height: 20px;
+}
+
+.popup_cal_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 50px; */
+    padding-block: 60px;
+    padding-inline: 90px;
+    border-bottom: 1px solid #eee;
+}
+
+.meeting_detail {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 40px;
+    padding-block: 20px;
+}
+
+.popup_cal_meeting-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0a2540;
+    margin-bottom: 24px;
+}
+
+.popup_cal_company-name,
+.popup_cal_duration {
+    color: rgba(26, 26, 26, 0.61);
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+}
+
+/* .popup_cal_duration {
+    display: flex;
+    align-items: center;
+    color: #666;
+} */
+
+.popup_cal_right-panel {
+    display: flex;
+    padding: 36px;
+    padding-left: 0px;
+    gap: 40px;
+    /* display: none; */
+}
+
+.right_time_container {
+    padding-top: 24px;
+}
+
+
+.popupForm button[type='submit']{
+    font-family: Nunito;
+}
+
+
+/* .popup_cal_calendar-section {
+    width: 100%;
+} */
+
+.right_container_modal {
+    display: flex;
+    width: 100%;
+}
+
+.popup_cal_main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.popup_cal_main-header h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(10, 37, 64);
+    padding-left: 28px;
+    line-height: 30px;
+}
+
+.popup_cal_selected-date {
+    font-size: 16px;
+    color: rgb(10, 37, 64);
+    text-align: left;
+    margin-bottom: 24px;
+    padding-left: 4px;
+
+}
+
+.time_date_info .popup_cal_selected-date {
+    margin-bottom: 0px;
+    padding-left: 0;
+    color: rgba(26, 26, 26, 0.61);
+}
+
+.popup_cal_month-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    color: #1a1a1a;
+    font-size: 16px;
+    width: 100%;
+}
+
+.popup_cal_month-selector button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #0066ff;
+    padding: 5px;
+    width: 37px;
+    height: 37px;
+    background: #ffeac3;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup_cal_month-selector button:hover {
+    background: #ffe4b2;
+}
+
+.popup_cal_month-selector button img {
+    width: 15px;
+    height: 15px;
+}
+
+.popup_cal_calendar {
+    width: 100%;
+}
+
+.popup_cal_weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.popup_cal_days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 4px;
+    row-gap: 7px;
+    font-weight: 500;
+    place-items: center;
+}
+
+.popup_cal_day {
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s;
+    color: orange;
+    height: 46px;
+
+}
+
+.popup_cal_day:hover:not(.popup_cal_disabled) {
+    background: #d9e9ff;
+}
+
+.popup_cal_day:not(.popup_cal_disabled) {
+    background: #ffeac3;
+    /* margin-left: 8px; */
+}
+
+.popup_cal_day.popup_cal_selected {
+    background: orange;
+    color: white;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.popup_cal_today.popup_cal_selected::after {
+    background-color: white;
+}
+
+.popup_cal_day.popup_cal_selected:hover {
+    background-color: orange !important;
+    color: #fff !important;
+}
+
+
+
+.popup_cal_time-slots-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 229px;
+    height: 440px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-right: 24px;
+    padding-inline: 1px;
+    padding-bottom: 20px;
+}
+
+.popup_cal_time-slot {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+    font-size: 14px;
+    color: #1a1a1a;
+}
+
+.popup_cal_time-slot:hover {
+    border-color: #fce4b6;
+    background: #f8f9ff;
+}
+
+.popup_cal_time-slot.popup_cal_selected {
+    background: #666;
+    color: white;
+}
+
+.popup_cal_premium-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #666;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 0 8px 0 4px;
+    font-size: 12px;
+}
+
+.popup_cal_timezone-selector {
+    margin-top: 20px;
+    color: #666;
+    font-size: 14px;
+    padding-inline: 18px;
+}
+
+.popup_cal_timezone-selector p {
+    font-size: 14px;
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: black;
+}
+
+.popup_cal_timezone-selector select {
+    width: 65%;
+    padding: 8px;
+    padding-inline: 10px;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 25px;
+    color: #1a1a1a;
+    outline: none;
+    font-size: 14px;
+    transition: all .2s ease-in-out;
+}
+
+.time_option {
+    display: flex;
+    align-items: center;
+    padding-inline: 10px;
+}
+
+.time_option:hover,
+.time_option:hover .popup_cal_timezone-selector select {
+    background-color: #e5e5e5;
+
+    border-radius: 25px;
+}
+
+.popup_cal_button-group {
+    display: flex;
+    /* gap: 22px; */
+    margin-top: 10px;
+}
+
+.popup_cal_button-group.active {
+    gap: 10px;
+}
+
+.time_date_info {
+    color: rgba(26, 26, 26, 0.61);
+    align-self: flex-start;
+    font-weight: 600;
+    margin-top: 1px;
+    margin-right: 8px;
+    margin-bottom: 24px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.time_date_info img {
+    width: 20px;
+    height: 20px;
+}
+
+.popup_cal_time-slots-section::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+
+}
+
+.popup_cal_time-slots-section::-webkit-scrollbar-thumb {
+    background-color: #737373;
+    border-radius: 6px;
+    border: 3px solid #ffffff;
+
+}
+
+.popup_cal_time-slot-selected {
+    padding: 16px;
+    padding-inline: 70px;
+    background: transparent;
+    color: orange;
+    border-radius: 4px;
+    flex: 1;
+    text-align: center;
+    border: 1px solid orange;
+    transition: all .2s ease-in-out;
+    margin-right: 22px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.popup_cal_time-slot-selected:hover {
+    outline: 1px solid orange;
+
+}
+
+.popup_cal_time-slot-selected.active {
+    padding-inline: 17px;
+    background-color: #666;
+    color: #fff;
+    border: 1px solid #666;
+    margin-right: 8px;
+    outline: none;
+}
+
+.popup_cal_next-button {
+    background: orange;
+    color: white;
+    border: none;
+    padding: 8px 29px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.popup_cal_next-button:hover {
+    background: orange;
+}
+
+.cal_time {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 24px; */
+}
+
+.calender_month_name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.timing_btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .timing_btns {
+    width: 333px;
+    overflow: hidden;
+} */
+
+/* .left_slot {
+    width: 50px;
+} */
+
+
+/* ==========form========= */
+.popupForm {
+    /* padding: 30px; */
+    width: 0%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 24px; */
+    transform: translateX(800px);
+    transition: all .5s ease-in-out;
+}
+
+.popupForm.active {
+    transform: translateX(0);
+    width: 100%;
+    overflow-y: auto;
+    padding: 30px;
+    background-color: #ffffff;
+    /* background-color: #F6F5EF; */
+}
+
+.popupForm .heading h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.email_field,
+.name_field,
+.message_field,
+.footer_text {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 24px;
+
+
+}
+
+.input_field_row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 25;
+}
+
+
+
+.footer_text {
+    font-size: 14px;
+}
+
+.popupForm .email_field {
+    gap: 24px;
+}
+
+.popupForm label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.popupForm input,
+.popupForm textarea,
+.popupForm select {
+    min-height: 46px;
+    padding: 10px 14px;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border: 1px solid #E4E2DC;
+    border-radius: 8px;
+    background: #fff;
+    color: #0a2540;
+    outline: none;
+    box-shadow: 0px 0px 0px 1px #b3c5e4;
+    color: #848484;
+}
+
+.popupForm input:focus,
+.popupForm textarea:active,
+.popupForm textarea:focus,
+.popupForm input:active {
+
+    border-color: orange;
+    box-shadow: none;
+    background: #fff;
+}
+
+/* .popupForm input:active,
+.popupForm textarea:active {
+    border: 1px solid #006bff;
+} */
+
+.form_content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
+    margin-top: 24px;
+
+}
+
+.popupForm button {
+    background-color: orange;
+    border: 1px solid orange;
+    width: 156px;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+    justify-content: center;
+    align-items: center;
+    min-height: 44px;
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    color: #fff;
+    line-height: 20px;
+    cursor: pointer;
+    margin-top: 0px;
+}
+
+.popupForm button:hover {
+    background-color: orange;
+}
+
+.add_guest {
+    display: inline-block;
+    border: 1px solid #004eba;
+    width: fit-content;
+    min-height: 32px;
+    padding: 7px 12px;
+    text-align: center;
+    border-radius: 40px;
+    color: #004eba;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+#add_guestInput {
+    display: none;
+}
+
+.add_guest:hover {
+    background-color: #004dba28;
+}
+
+/*
+==============================
+ ? => Guest Email Css :---
+==============================
+*/
+
+
+#email-container {
+    width: 98%;
+    border-radius: 5px;
+    padding: 4px 3px;
+    margin-top: 0px;
+    border: none;
+    transition: .2s ease-in-out;
+    box-shadow: 0px 0px 0px 1px #b3c5e4;
+    margin-left: 2px;
+    min-height: fit-content;
+    overflow: auto;
+}
+
+#email-container input {
+    box-shadow: none;
+    border: none;
+    height: fit-content;
+    font-size: 15.5px;
+    padding-left: 5px;
+    margin-top: 0;
+}
+#stickyDiv{
+    padding-bottom: 5px;
+}
+
+#stickyDiv #email-container:focus-within {
+    border: 1px solid;
+    /* border-image: linear-gradient(to right, #2EC4B6, #00B3FF, #003DA6) 1; */
+    background-color: #fff;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    box-shadow: 0px 0px 0px 1px #0089c3;
+    
+}
+
+#stickyDiv #email-container input {
+    padding: 3px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+.right_sticky_form input {
+    height: 32px;
+    width: 98%;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin-top: 4px;
+    border: none;
+    transition: .2s ease-in-out;
+    box-shadow: 0px 0px 0px 1px #b3c5e4;
+    margin-left: 2px;
+   
+}
+
+.right_sticky_form input:focus {
+    /* border: 1px solid;  */
+    /* border-image: linear-gradient(to right, #2EC4B6, #00B3FF, #003DA6) 1; */
+    box-shadow: 0px 0px 0px 1px #0089c3;
+    border: none;
+    /* background-color: #fff; 
+    border-radius: 5px !important;
+    border-radius: inherit !important; */
+    outline: none; 
+}
+
+.right_sticky_form select {
+    color: #7a7b7d;
+    font-size: 16px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-family: Nunito;
+    box-shadow: 0px 0px 0px 1px #b3c5e4;
+    border: none;
+    margin-left: 2px;
+    width: 98%;
+}
+
+.right_sticky_form select:focus {
+    /* border: 1px solid; 
+    border-image: linear-gradient(to right, #2EC4B6, #00B3FF, #003DA6) 1;
+    background-color: #fff; 
+    border-radius: 5px !important;
+    border-radius: inherit !important;
+    outline: none;  */
+    box-shadow: none;
+    box-shadow: 0px 0px 0px 1px #0089c3;
+    border: none;
+}
+
+/* .right_sticky_form input:before {
+    content: "";
+    position: absolute;
+    border-radius: 7px;
+    background: linear-gradient(to right, #2EC4B6, #00B3FF, #003DA6);
+    z-index: 1;
+} */
+
+
+
+.email-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.email-chip {
+    display: flex;
+    align-items: center;
+    background-color: #e3f2fd;
+    border: 1px solid #90caf9;
+    border-radius: 3px;
+    padding: 0px 5px;
+    margin: 5px;
+    height: 26px;
+    font-size: 16px;
+    width: fit-content;
+    color: #0d47a1;
+}
+
+.email-chip .close-btn {
+    cursor: pointer;
+    margin-left: 8px;
+    font-weight: bold;
+    color: #d32f2f;
+}
+
+.email-input {
+    flex: 1;
+    border: none;
+    outline: none;
+    min-width: 150px;
+}
+
+.email-input-container:focus-within {
+    border-color: #0056b3;
+}
+
+
+
+.popUpCalendly #email-container{
+    min-height: 46px;
+    padding: 10px 14px;
+    font-size: 16px;
+    line-height: 1.5;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 0px 1px #b3c5e4;
+    border: 1px solid #E4E2DC;
+    border-radius: 8px;
+    background: #fff;
+    color: #0a2540;
+    outline: none;
+    display: flex;
+}
+
+
+/* ====end guest email  */
+
+
+/* ===========new updated code === */
+
+.popup_cal_today {
+    position: relative;
+}
+
+.popup_cal_today::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+/* Calendar Grid Styles */
+.popup_cal_calendar {
+    padding: 24px;
+}
+
+.popup_cal_month-selector {
+    margin-bottom: 32px;
+}
+
+#popup_cal_current-month {
+    font-size: 16px;
+    font-weight: 400;
+    color: #1a202c;
+}
+
+.popup_cal_weekdays {
+    margin-bottom: 16px;
+}
+
+.popup_cal_weekdays div {
+
+    color: #0a2540;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.popup_cal_days {
+    gap: 2px;
+}
+
+.popup_cal_day {
+    height: 42px;
+    /* font-size: 14px; */
+    /* color: #2d3748; */
+    background: transparent;
+    border-radius: 100%;
+    margin: 2px;
+    font-weight: 700;
+}
+
+
+
+.popup_cal_day:not(.popup_cal_disabled):hover {
+    background: #ffdd9f;
+}
+
+
+
+.popup_cal_day.popup_cal_disabled {
+    color: rgba(26, 26, 26, 0.61);
+    background: transparent;
+    cursor: not-allowed;
+    font-weight: 500;
+}
+
+.popup_cal_day.popup_cal_sunday {
+    color: rgba(26, 26, 26, 0.61);
+    background: transparent;
+    cursor: not-allowed;
+
+}
+
+
+.popupForm textarea {
+    font-family: Nunito;
+    margin-top: 0px;
+}
+
+
+.mbl-cta {
+    display: none;
+}
+
+.popup_cal_month-selector button.popup_cal_disabled{
+    background: #fff;
+    cursor: not-allowed;
+}
+
+.email-chip {
+    display: inline-flex;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 16px;
+    padding: 4px 8px;
+    margin: 4px;
+    font-size: 14px;
+    outline: none;
+}
+
+.email-chip .close-btn {
+    margin-left: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tooltip {
+    position: absolute;
+     top: 400px;
+    background-color: #ffcccc;
+    color: #ff0000;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+.all_rights{
+    margin-block: .5rem;
+}
+
+.invalid-email {
+    border: 1px solid red;
+    color: red;
+}
+
+.no_slots_div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.no_slots_div .time_img img{
+    width: 65px;
+}
+
+.time_text {
+    color: #ffa500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.time_text h4{
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.time_text p{
+    font-size: 18px;
+}
+
+.register_form2_mobile{
+    display: none;
+}
+#hero .register_form2_mobile .form_block .form-control{
+    margin-bottom: 0px;
+}
+
+#hero .register_form2_mobile .register_tag_msg {
+    display: none;
+}
+
+
+#hero .register_form2 .form_block .row {
+
+    margin-bottom: 21px;
+}
+
+.register_form2 .form_block input[type=email]::placeholder,  .register_form2 .form_block select::placeholder, .register_form2 .form_block input[type=text]::placeholder, .register_form2 .form_block textarea::placeholder {
+font-size: 14px;
+}
+
+.register_form2 .form_block select  {
+    font-size: 14px;
+}
+
+#hero .register_form2 .form_block .btn-get-started {
+    margin-top: 2px;
+}
+
+.register_form2 .form_block>div {
+    margin-bottom: 0px;
+}
+
+#hero .register_form2 .form_block{
+    margin-top: 18px;
+}
+.register_form2 .form_block {
+    width: 87%;
+}
+
+#hero .register_form2 .form_block .btn-get-started {
+    padding-inline: 16px;
+}
+/* ==========form========= */
+
+
+
+@media (max-width: 1026px) {
+    .popup_cal_scheduler-container {
+        grid-template-columns: 1fr;
+        height: 98vh;
+    }
+
+    .popup_cal_right-panel {
+        grid-template-columns: 1fr;
+        padding-inline: 12px;
+
+    }
+
+    .popup_cal_left-panel {
+        /* border-right: none; */
+        border-bottom: 1px solid #eee;
+    }
+
+    .popup_cal_logo {
+        padding-inline: 30px;
+    }
+
+
+
+}
+
+@media (max-width:991px){
+    .register_form2 {
+        display: none;
+    }
+    .register_form2_mobile{
+        display: block;
+    }
+
+    #hero .form_block .row{
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .popup_cal_scheduler-container {
+        flex-direction: column;
+        /* max-width: 442px; */
+        /* margin: auto; */
+        height: 98vh;
+        overflow-y: scroll;
+    }
+
+    .hide-in-mbl{
+        display: none;
+    }
+    .popup_cal_next-button{
+        margin-right: 2px;
+     }
+
+    .popup_cal_meeting-title {
+        margin-bottom: 0px;
+    }
+
+    .meeting_detail {
+        padding-bottom: 0;
+    }
+
+    .popup_cal_left-panel {
+        border-right: none;
+        box-shadow: none
+    }
+    .popup_cal_scheduler-container {
+        max-width: 100%;
+    }
+
+    .popup_cal_scheduler-container {
+        margin-inline: 7px;
+    }
+
+    .meeting_detail {
+        padding-inline: 25px;
+        text-align: center;
+    }
+
+    .time_date_info {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .popup_cal_time-slots-section {
+        width: 251px;
+    }
+
+    
+    .previous_btn_popup{
+        left: 0;
+        border-radius: unset;
+    }
+    .popup_cal_time-slot-selected {
+        padding-inline: 73px;
+        padding-inline: 84px;
+    }
+    .close_calendly img{
+        margin-left: 2px;
+    }
+
+    .popup_cal_time-slot-selected.active {
+        margin-right: 4px;
+    }
+
+    .cal_time {
+        flex-direction: column;
+    }
+
+    .right_time_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .form_content {
+        width: 100%;
+    }
+
+    .popup_cal_main-header h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .email_field,
+    .name_field,
+    .message_field,
+    .footer_text {
+        flex-direction: column;
+    }
+
+    .popup_cal_right-panel {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .popup_cal_timezone-selector {
+        text-align: center;
+        display: none;
+    }
+
+    .popup_cal_timezone-selector select {
+        width: 48%;
+    }
+
+    .time_option {
+        justify-content: center;
+    }
+
+    .popup_cal_calendar {
+        padding-inline: 0px;
+    }
+
+    /* .right_container_modal{
+        flex-direction: column;
+    } */
+
+    .no_slots_div{
+        height: unset;
+    }
+
+    #hero .schedule-btn{
+        text-align: center;
+    }
+   
+
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+
+    .popup_cal_scheduler-container {
+        border-radius: 0;
+    }
+
+    .popup_cal_right-panel,
+    .popup_cal_left-panel {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 428px) {
+    .popup_cal_scheduler-container {
+        max-width: 100%;
+    }
+
+    /* .close_calendly{
+        position: sticky;
+        right: 0;
+    } */
+    
+
+    .popup_cal_right-panel {
+        padding: 13px;
+        padding-left: 13px;
+    }
+
+    .popup_cal_calendar {
+        padding: 0;
+    }
+
+    .popup_cal_day {
+        height: 34px;
+    }
+
+    .meeting_detail {
+        padding-inline: 10px;
+    }
+
+    .form_content {
+        width: 100%;
+    }
+
+    .popup_cal_timezone-selector p {
+        text-align: center;
+    }
+
+    .time_option {
+        justify-content: center;
+    }
+
+    .popup_cal_timezone-selector select {
+        width: 68%;
+    }
+
+    .popup_cal_company-name,
+    .popup_cal_duration {
+        width: 100%;
+        text-align: center;
+    }
+
+    .popup_cal_logo {
+        padding-top: 0;
+        padding-bottom: 32px;
+    }
+
+    .right_time_container {
+        padding-top: 28px;
+        
+    }
+}
+
+
+@media (max-width: 768px) {
+    .close_calendly {
+        top: 17px;
+        right: 0px;
+        border-radius: 0;
+    }
+}
+
+
+
+
