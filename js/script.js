@@ -13,7 +13,7 @@ const closeBtn = document.querySelector(".close_btn");
 // Initialize transition properties
 mobileNav.style.transition = "opacity 0.3s ease, transform 0.3s ease";
 mobileNav.style.opacity = "0";
-mobileNav.style.transform = "translateX(100%)"; // Start off-screen to the right
+mobileNav.style.transform = "translateX(0%)"; // Start off-screen to the right
 mobileNav.style.visibility = "hidden"; // Prevent interaction initially
 
 // Function to show the mobile navigation
@@ -26,7 +26,7 @@ menue.addEventListener("click", () => {
 // Function to hide the mobile navigation
 closeBtn.addEventListener("click", () => {
   mobileNav.style.opacity = "0";
-  mobileNav.style.transform = "translateX(100%)"; // Move out of view to the right
+  mobileNav.style.transform = "translateX(0%)"; // Move out of view to the right
   setTimeout(() => {
     mobileNav.style.visibility = "hidden"; // Delay visibility change to match transition
   }, 300); // Match this duration to the transition time
