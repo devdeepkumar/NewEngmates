@@ -69,7 +69,7 @@ body {
   ); */
 
   color: var(--bodyColor);
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   line-height: 1.8;
   position: relative;
@@ -531,18 +531,18 @@ header .user-nav .common_btn {
 }
 
 .educationarea__small__img__2 {
-  position: absolute;
-  background: var(--bodyBg);
-  width: 342px;
-  height: 75px;
-  top: 41px;
-  right: -405px;
-  padding: 10px;
-  box-shadow: 0px 10px 20px 0px rgba(0, 5, 52, 0.1);
-  animation: move5 3s infinite linear;
-  display: flex;
-  gap: 15px;
-  z-index: 99;
+ position: absolute;
+    background: var(--bodyBg);
+    width: 332px;
+    height: 63px;
+    top: -33px;
+    right: -410px;
+    padding: 5px;
+    box-shadow: 0px 10px 20px 0px rgba(0, 5, 52, 0.1);
+    animation: move5 3s infinite linear;
+    display: flex;
+    gap: 15px;
+    z-index: 99;
 }
 .educationarea__small__content span:first-child {
   color:  #B82F52;
